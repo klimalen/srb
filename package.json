@@ -1,0 +1,9 @@
+{
+  "name": "srb",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "dictionary": "python3 scripts/build-dictionary.py"
+  }
+}
