@@ -8,6 +8,7 @@ import {
   fold,
   formatPercent,
   matchesQuery,
+  promptSize,
   normalizeStore,
   pickDirection,
   pickWord,
@@ -61,6 +62,12 @@ test("direction is one of the two sides", () => {
   assert.equal(pickDirection(() => 0), "sr-ru")
   assert.equal(pickDirection(() => 0.5), "ru-sr")
   assert.equal(pickDirection(() => 0.99), "ru-sr")
+})
+
+test("longer phrases step down in size before a word is split", () => {
+  assert.equal(promptSize("редко"), "md")
+  assert.equal(promptSize("мы тренируемся"), "lg")
+  assert.equal(promptSize("U koliko sati idete u bioskop?"), "xl")
 })
 
 test("an answer updates shown, correct and wrong together", () => {

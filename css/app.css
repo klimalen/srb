@@ -185,13 +185,12 @@ input {
 .prompt,
 .line {
   display: block;
-  max-width: min(100%, 22rem);
+  max-width: 100%;
   font-family: var(--font-word);
   font-weight: 600;
-  line-height: 1.15;
+  line-height: 1.18;
   letter-spacing: -0.025em;
-  overflow-wrap: anywhere;
-  text-wrap: balance;
+  overflow-wrap: break-word;
 }
 
 .prompt {
@@ -217,12 +216,12 @@ input {
 
 .reading {
   display: block;
-  max-width: min(100%, 24rem);
+  max-width: 100%;
   margin-top: 14px;
   color: var(--muted);
   font-size: 1.15rem;
   line-height: 1.35;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .card.is-back .reading {
@@ -385,7 +384,7 @@ input {
   font-size: 1.22rem;
   font-weight: 600;
   letter-spacing: -0.02em;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .entry-ru {
@@ -393,7 +392,7 @@ input {
   color: var(--muted);
   font-size: 0.95rem;
   line-height: 1.35;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .entry-pct {

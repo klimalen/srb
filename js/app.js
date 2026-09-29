@@ -7,6 +7,7 @@ import {
   normalizeStore,
   pickDirection,
   pickWord,
+  promptSize,
   readStat,
 } from "./review.js"
 
@@ -152,7 +153,7 @@ function frontMarkup(word, direction) {
     <div class="stage">
       <button type="button" class="card">
         <span class="kicker">${serbian ? "сербский" : "русский"}</span>
-        <span class="prompt" lang="${serbian ? "sr" : "ru"}" data-size="${sizeOf(prompt)}">${esc(prompt)}</span>
+        <span class="prompt" lang="${serbian ? "sr" : "ru"}" data-size="${promptSize(prompt)}">${esc(prompt)}</span>
         ${reading}
         <span class="tap-hint">нажмите, чтобы открыть</span>
       </button>
@@ -165,9 +166,9 @@ function backMarkup(word, direction) {
   return `
     <div class="stage is-revealed">
       <div class="card is-back">
-        <span class="line serbian ${answerIsRussian ? "is-known" : "is-answer"}" lang="sr" data-size="${sizeOf(word.serbian)}">${esc(word.serbian)}</span>
+        <span class="line serbian ${answerIsRussian ? "is-known" : "is-answer"}" lang="sr" data-size="${promptSize(word.serbian)}">${esc(word.serbian)}</span>
         <span class="reading" lang="ru">${esc(word.transcription)}</span>
-        <span class="line russian ${answerIsRussian ? "is-answer" : "is-known"}" lang="ru" data-size="${sizeOf(word.russian)}">${esc(word.russian)}</span>
+        <span class="line russian ${answerIsRussian ? "is-answer" : "is-known"}" lang="ru" data-size="${promptSize(word.russian)}">${esc(word.russian)}</span>
       </div>
       <div class="answers">
         <button type="button" class="answer wrong" data-answer="wrong">
@@ -261,12 +262,6 @@ function percentTone(stat) {
   if (ratio < 0.6) return "bad"
   if (ratio >= 0.85) return "good"
   return "mid"
-}
-
-function sizeOf(text) {
-  if (text.length > 42) return "xl"
-  if (text.length > 22) return "lg"
-  return "md"
 }
 
 function esc(value) {

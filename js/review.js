@@ -48,6 +48,13 @@ export function applyAnswer(stat, isCorrect) {
   return { shown: correct + wrong, correct, wrong }
 }
 
+export function promptSize(text) {
+  const length = String(text).length
+  if (length > 26) return "xl"
+  if (length > 12) return "lg"
+  return "md"
+}
+
 export function formatPercent(stat) {
   const { shown, correct } = readStat(stat)
   if (shown === 0) return "—"
