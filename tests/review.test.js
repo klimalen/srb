@@ -110,6 +110,22 @@ test("same error rate prefers the word missed more often", () => {
   assert.ok(compareWords(words[1], words[0], stats) < 0)
 })
 
+test("the stressed vowel is a capital in the transcription", () => {
+  const bySerbian = new Map(dictionary.map((word) => [word.serbian, word]))
+  assert.equal(bySerbian.get("danas").transcription, "дАнас")
+  assert.equal(bySerbian.get("uvek").transcription, "Увек")
+  assert.equal(bySerbian.get("juče").transcription, "Юче")
+  assert.equal(bySerbian.get("ja sam").transcription, "Я сам")
+  assert.equal(bySerbian.get("mi smo").transcription, "мИ смо")
+  assert.equal(bySerbian.get("ja govorim").transcription, "Я гОворим")
+  assert.equal(bySerbian.get("kod kuće").transcription, "код кУче")
+  assert.equal(bySerbian.get("Nikad ne idem autom.").transcription, "нИкад нЕ идем Аутом.")
+  assert.equal(bySerbian.get("mi").transcription, "ми")
+  assert.equal(bySerbian.get("danas").id, "w888fffef")
+  assert.equal(matchesQuery(bySerbian.get("danas"), "данас"), true)
+  assert.equal(matchesQuery(bySerbian.get("međutim"), "меджутим"), true)
+})
+
 test("search ignores case and Serbian diacritics", () => {
   const word = {
     serbian: "međutim",
