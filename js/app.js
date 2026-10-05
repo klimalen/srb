@@ -3,6 +3,7 @@ import {
   applyAnswer,
   compareWords,
   formatPercent,
+  learningDeck,
   matchesQuery,
   normalizeStore,
   nextDirectionSlot,
@@ -153,6 +154,7 @@ function frontMarkup(word, direction) {
     : ""
   return `
     <div class="stage">
+      ${deckLine()}
       <button type="button" class="card">
         <span class="kicker">${serbian ? "сербский" : "русский"}</span>
         <span class="prompt" lang="${serbian ? "sr" : "ru"}" data-size="${promptSize(prompt)}">${esc(prompt)}</span>
@@ -167,6 +169,7 @@ function backMarkup(word, direction) {
   const answerIsRussian = direction === "sr-ru"
   return `
     <div class="stage is-revealed">
+      ${deckLine()}
       <div class="card is-back">
         <span class="line serbian ${answerIsRussian ? "is-known" : "is-answer"}" lang="sr" data-size="${promptSize(word.serbian)}">${esc(word.serbian)}</span>
         <span class="reading" lang="ru">${esc(word.transcription)}</span>
@@ -196,13 +199,19 @@ function announcement(word, revealed, direction) {
   return `Русский. ${word.russian}.`
 }
 
+function deckLine() {
+  const size = learningDeck(dictionary, state.store.stats).length
+  if (size >= dictionary.length) return ""
+  return `<p class="deck">${size} в колоде</p>`
+}
+
 function mountWords() {
   view.dataset.screen = "words"
   view.innerHTML = `
     <section class="words">
       <div class="words-head">
         <h1>Слова</h1>
-        <p class="lede">Сначала те, что запоминаются хуже.</p>
+        <p class="lede" id="lede">Сначала те, что запоминаются хуже.</p>
         <div class="search-row">
           <label class="sr-only" for="search">Поиск по словарю</label>
           <input id="search" type="search" enterkeyhint="search" placeholder="Поиск" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" value="${esc(state.query)}">
@@ -229,6 +238,13 @@ function paintWords() {
     .filter((word) => matchesQuery(word, state.query))
     .sort((a, b) => compareWords(a, b, state.store.stats))
   clear.hidden = query.length === 0
+  const lede = document.querySelector("#lede")
+  if (lede && !query) {
+    const size = learningDeck(dictionary, state.store.stats).length
+    lede.textContent = size < dictionary.length
+      ? `Сначала те, что запоминаются хуже. В карточках сейчас ${size}.`
+      : "Сначала те, что запоминаются хуже."
+  }
   count.textContent = query
     ? `${items.length} из ${dictionary.length}`
     : `${dictionary.length} слов`

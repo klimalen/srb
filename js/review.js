@@ -18,13 +18,60 @@ export function weight(stat) {
   return raw < MIN_WEIGHT ? MIN_WEIGHT : raw
 }
 
+// Сначала короткая колода, потом к ней подмешиваются следующие слова.
+// Иначе знакомое слово возвращается слишком поздно и забывается.
+export const LESSON_SIZE = 20
+export const LESSON_STEP = 5
+export const LESSON_CORRECT = 3
+export const LESSON_SHOWN = 8
+
+export function lessonReady(stat) {
+  const { correct, shown } = readStat(stat)
+  return correct >= LESSON_CORRECT || shown >= LESSON_SHOWN
+}
+
+export function unlockedCount(words, stats) {
+  const total = words.length
+  let count = Math.min(LESSON_SIZE, total)
+  while (count < total) {
+    const start = count <= LESSON_SIZE ? 0 : count - LESSON_STEP
+    let ready = true
+    for (let i = start; i < count; i += 1) {
+      if (!lessonReady(stats?.[words[i].id])) {
+        ready = false
+        break
+      }
+    }
+    if (!ready) break
+    count = Math.min(total, count + LESSON_STEP)
+  }
+  return count
+}
+
+export function learningDeck(words, stats) {
+  if (!words.length) return []
+  const limit = unlockedCount(words, stats)
+  const deck = words.slice(0, limit)
+  const seen = new Set(deck.map((word) => word.id))
+  for (let i = limit; i < words.length; i += 1) {
+    const word = words[i]
+    if (seen.has(word.id)) continue
+    if (readStat(stats?.[word.id]).wrong > 0) {
+      deck.push(word)
+      seen.add(word.id)
+    }
+  }
+  return deck
+}
+
 export function pickWord(words, stats, excludeId, random = Math.random) {
   if (!words.length) {
     throw new Error("Словарь пуст")
   }
-  let pool = words
-  if (excludeId && words.length > 1) {
-    const filtered = words.filter((word) => word.id !== excludeId)
+  const deck = learningDeck(words, stats)
+  let pool = deck.length ? deck : words
+  if (excludeId && pool.length > 1) {
+    const filtered = pool.filter((word) => word.id !== excludeId)
     if (filtered.length) pool = filtered
   }
   const weights = pool.map((word) => weight(stats?.[word.id]))

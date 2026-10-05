@@ -124,6 +124,15 @@ input {
   flex-direction: column;
 }
 
+.deck {
+  margin: 0 0 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--faint);
+}
+
 .stage {
   flex: 1;
   min-height: 0;

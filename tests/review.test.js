@@ -11,8 +11,15 @@ import {
   promptSize,
   normalizeStore,
   nextDirectionSlot,
+  learningDeck,
+  lessonReady,
   pickDirection,
   pickWord,
+  unlockedCount,
+  LESSON_CORRECT,
+  LESSON_SHOWN,
+  LESSON_SIZE,
+  LESSON_STEP,
   readStat,
   weight,
 } from "../js/review.js"
@@ -67,6 +74,57 @@ test("three russian prompts are followed by one serbian prompt", () => {
   assert.equal(pickDirection(), "ru-sr")
   assert.equal(pickDirection(-1), "ru-sr")
   assert.equal(pickDirection(1.5), "ru-sr")
+})
+
+function lessonWords(count) {
+  return Array.from({ length: count }, (_, index) => ({ id: `w${index}` }))
+}
+
+function mastered(ids) {
+  const stats = {}
+  for (const id of ids) stats[id] = { correct: LESSON_CORRECT, wrong: 0 }
+  return stats
+}
+
+test("a fresh deck is the first lesson, then five more after it sticks", () => {
+  const words = lessonWords(LESSON_SIZE + LESSON_STEP + 3)
+  assert.equal(unlockedCount(words, {}), LESSON_SIZE)
+  assert.equal(learningDeck(words, {}).length, LESSON_SIZE)
+
+  const first = words.slice(0, LESSON_SIZE).map((word) => word.id)
+  const stats = mastered(first)
+  stats[first[first.length - 1]] = { correct: LESSON_CORRECT - 1, wrong: 0 }
+  assert.equal(lessonReady(stats[first[first.length - 1]]), false)
+  assert.equal(unlockedCount(words, stats), LESSON_SIZE)
+
+  stats[first[first.length - 1]] = { correct: 0, wrong: LESSON_SHOWN }
+  assert.equal(unlockedCount(words, stats), LESSON_SIZE + LESSON_STEP)
+
+  const second = words.slice(LESSON_SIZE, LESSON_SIZE + LESSON_STEP).map((word) => word.id)
+  Object.assign(stats, mastered(second))
+  stats[second[second.length - 1]] = { correct: 1, wrong: 1 }
+  assert.equal(unlockedCount(words, stats), LESSON_SIZE + LESSON_STEP)
+  Object.assign(stats, mastered(second))
+  assert.equal(unlockedCount(words, stats), words.length)
+})
+
+test("a missed word stays in the deck before its lesson is opened", () => {
+  const words = lessonWords(LESSON_SIZE + 8)
+  const late = words[words.length - 1].id
+  const missed = learningDeck(words, { [late]: { correct: 0, wrong: 1 } })
+  assert.equal(missed.length, LESSON_SIZE + 1)
+  assert.equal(missed[missed.length - 1].id, late)
+  const seenOnce = learningDeck(words, { [late]: { correct: 1, wrong: 0 } })
+  assert.equal(seenOnce.some((word) => word.id === late), false)
+})
+
+test("cards are drawn only from the open deck", () => {
+  const words = lessonWords(40)
+  for (let step = 0; step < 30; step += 1) {
+    const word = pickWord(words, {}, "w0", () => step / 30)
+    assert.ok(Number(word.id.slice(1)) < LESSON_SIZE)
+    assert.notEqual(word.id, "w0")
+  }
 })
 
 test("longer phrases step down in size before a word is split", () => {
