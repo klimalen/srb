@@ -10,6 +10,7 @@ import {
   matchesQuery,
   promptSize,
   normalizeStore,
+  nextDirectionSlot,
   pickDirection,
   pickWord,
   readStat,
@@ -58,10 +59,14 @@ test("the word just shown is skipped until the one after", () => {
   assert.equal(pickWord([{ id: "only" }], {}, "only", () => 0.2).id, "only")
 })
 
-test("direction is one of the two sides", () => {
-  assert.equal(pickDirection(() => 0), "sr-ru")
-  assert.equal(pickDirection(() => 0.5), "ru-sr")
-  assert.equal(pickDirection(() => 0.99), "ru-sr")
+test("three russian prompts are followed by one serbian prompt", () => {
+  const cycle = [0, 1, 2, 3, 4, 5, 6, 7].map((slot) => pickDirection(slot))
+  assert.deepEqual(cycle, ["ru-sr", "ru-sr", "ru-sr", "sr-ru", "ru-sr", "ru-sr", "ru-sr", "sr-ru"])
+  assert.equal(nextDirectionSlot(0), 1)
+  assert.equal(nextDirectionSlot(3), 0)
+  assert.equal(pickDirection(), "ru-sr")
+  assert.equal(pickDirection(-1), "ru-sr")
+  assert.equal(pickDirection(1.5), "ru-sr")
 })
 
 test("longer phrases step down in size before a word is split", () => {
@@ -140,7 +145,11 @@ test("stored stats ignore garbage and keep a last id", () => {
   assert.equal(store.stats.bad, undefined)
   assert.deepEqual(readStat(store.stats.negative), { shown: 1, correct: 0, wrong: 1 })
   assert.equal(store.lastId, "ok")
-  assert.deepEqual(normalizeStore(null), { version: 1, stats: {}, lastId: null })
+  assert.equal(store.directionSlot, 0)
+  assert.equal(normalizeStore({ directionSlot: 3 }).directionSlot, 3)
+  assert.equal(normalizeStore({ directionSlot: 5 }).directionSlot, 1)
+  assert.equal(normalizeStore({ directionSlot: "nope" }).directionSlot, 0)
+  assert.deepEqual(normalizeStore(null), { version: 1, stats: {}, lastId: null, directionSlot: 0 })
 })
 
 test("the shipped dictionary is complete and addressable", () => {

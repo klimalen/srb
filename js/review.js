@@ -37,8 +37,22 @@ export function pickWord(words, stats, excludeId, random = Math.random) {
   return pool[pool.length - 1]
 }
 
-export function pickDirection(random = Math.random) {
-  return random() < 0.5 ? "sr-ru" : "ru-sr"
+// Три карточки с русского на сербский, затем одна с сербского на русский.
+const DIRECTION_CYCLE = ["ru-sr", "ru-sr", "ru-sr", "sr-ru"]
+
+export function pickDirection(slot = 0) {
+  const index = directionIndex(slot)
+  return DIRECTION_CYCLE[index]
+}
+
+export function nextDirectionSlot(slot = 0) {
+  return (directionIndex(slot) + 1) % DIRECTION_CYCLE.length
+}
+
+function directionIndex(slot) {
+  const index = Number(slot)
+  if (!Number.isInteger(index) || index < 0) return 0
+  return index % DIRECTION_CYCLE.length
 }
 
 export function applyAnswer(stat, isCorrect) {
@@ -109,7 +123,7 @@ export function normalizeStore(data) {
     }
   }
   const lastId = data && typeof data.lastId === "string" ? data.lastId : null
-  return { version: STORAGE_VERSION, stats, lastId }
+  return { version: STORAGE_VERSION, stats, lastId, directionSlot: directionIndex(data?.directionSlot) }
 }
 
 function bucket(stat) {

@@ -5,6 +5,7 @@ import {
   formatPercent,
   matchesQuery,
   normalizeStore,
+  nextDirectionSlot,
   pickDirection,
   pickWord,
   promptSize,
@@ -61,7 +62,7 @@ function saveStore() {
 
 function deal() {
   const word = pickWord(dictionary, state.store.stats, state.store.lastId)
-  state.card = { word, direction: pickDirection() }
+  state.card = { word, direction: pickDirection(state.store.directionSlot) }
   state.phase = "front"
   state.store.lastId = word.id
   saveStore()
@@ -77,6 +78,7 @@ function answer(isCorrect) {
   if (state.view !== "cards" || state.phase !== "back" || !state.card) return
   const { word } = state.card
   state.store.stats[word.id] = applyAnswer(state.store.stats[word.id], isCorrect)
+  state.store.directionSlot = nextDirectionSlot(state.store.directionSlot)
   deal()
   render()
 }
