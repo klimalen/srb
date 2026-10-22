@@ -18,34 +18,34 @@ export function weight(stat) {
   return raw < MIN_WEIGHT ? MIN_WEIGHT : raw
 }
 
-// Сначала короткая колода, потом к ней подмешиваются следующие слова.
-// Иначе знакомое слово возвращается слишком поздно и забывается.
+// Сначала короткая колода. Дальше новое слово приходит, как только
+// предыдущие начинают получаться: незакреплённых держим около LESSON_AHEAD,
+// а не ждём, пока закроется вся пачка. Иначе знакомое слово возвращается
+// слишком поздно, а очередь к новым стоит на месте.
 export const LESSON_SIZE = 20
-export const LESSON_STEP = 5
-export const LESSON_CORRECT = 3
-export const LESSON_SHOWN = 8
+export const LESSON_AHEAD = 14
+export const LESSON_CORRECT = 2
+export const LESSON_SHOWN = 6
 
 export function lessonReady(stat) {
-  const { correct, shown } = readStat(stat)
-  return correct >= LESSON_CORRECT || shown >= LESSON_SHOWN
+  const { correct, wrong, shown } = readStat(stat)
+  if (shown >= LESSON_SHOWN) return true
+  return correct >= LESSON_CORRECT && correct > wrong
 }
 
 export function unlockedCount(words, stats) {
   const total = words.length
-  let count = Math.min(LESSON_SIZE, total)
-  while (count < total) {
-    const start = count <= LESSON_SIZE ? 0 : count - LESSON_STEP
-    let ready = true
-    for (let i = start; i < count; i += 1) {
-      if (!lessonReady(stats?.[words[i].id])) {
-        ready = false
-        break
-      }
-    }
-    if (!ready) break
-    count = Math.min(total, count + LESSON_STEP)
+  if (!total) return 0
+  let open = Math.min(LESSON_SIZE, total)
+  let settled = 0
+  for (let i = 0; i < open; i += 1) {
+    if (lessonReady(stats?.[words[i].id])) settled += 1
   }
-  return count
+  while (open < total && settled + LESSON_AHEAD > open) {
+    if (lessonReady(stats?.[words[open].id])) settled += 1
+    open += 1
+  }
+  return open
 }
 
 export function learningDeck(words, stats) {

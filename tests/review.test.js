@@ -16,10 +16,10 @@ import {
   pickDirection,
   pickWord,
   unlockedCount,
+  LESSON_AHEAD,
   LESSON_CORRECT,
   LESSON_SHOWN,
   LESSON_SIZE,
-  LESSON_STEP,
   readStat,
   weight,
 } from "../js/review.js"
@@ -86,26 +86,37 @@ function mastered(ids) {
   return stats
 }
 
-test("a fresh deck is the first lesson, then five more after it sticks", () => {
-  const words = lessonWords(LESSON_SIZE + LESSON_STEP + 3)
+test("new words arrive as soon as earlier ones start sticking", () => {
+  const words = lessonWords(LESSON_SIZE + LESSON_AHEAD + 3)
   assert.equal(unlockedCount(words, {}), LESSON_SIZE)
   assert.equal(learningDeck(words, {}).length, LESSON_SIZE)
 
   const first = words.slice(0, LESSON_SIZE).map((word) => word.id)
-  const stats = mastered(first)
-  stats[first[first.length - 1]] = { correct: LESSON_CORRECT - 1, wrong: 0 }
-  assert.equal(lessonReady(stats[first[first.length - 1]]), false)
+  const need = LESSON_SIZE - LESSON_AHEAD + 1
+  const stats = mastered(first.slice(0, need - 1))
+  assert.equal(lessonReady(stats[first[0]]), true)
   assert.equal(unlockedCount(words, stats), LESSON_SIZE)
 
-  stats[first[first.length - 1]] = { correct: 0, wrong: LESSON_SHOWN }
-  assert.equal(unlockedCount(words, stats), LESSON_SIZE + LESSON_STEP)
+  Object.assign(stats, mastered([first[need - 1]]))
+  assert.equal(unlockedCount(words, stats), LESSON_SIZE + 1)
 
-  const second = words.slice(LESSON_SIZE, LESSON_SIZE + LESSON_STEP).map((word) => word.id)
-  Object.assign(stats, mastered(second))
-  stats[second[second.length - 1]] = { correct: 1, wrong: 1 }
-  assert.equal(unlockedCount(words, stats), LESSON_SIZE + LESSON_STEP)
-  Object.assign(stats, mastered(second))
-  assert.equal(unlockedCount(words, stats), words.length)
+  stats[first[0]] = { correct: LESSON_CORRECT - 1, wrong: 0 }
+  assert.equal(lessonReady(stats[first[0]]), false)
+  assert.equal(unlockedCount(words, stats), LESSON_SIZE)
+
+  stats[first[0]] = { correct: LESSON_CORRECT, wrong: LESSON_CORRECT }
+  assert.equal(lessonReady(stats[first[0]]), false)
+  assert.equal(unlockedCount(words, stats), LESSON_SIZE)
+
+  stats[first[0]] = { correct: 0, wrong: LESSON_SHOWN }
+  assert.equal(lessonReady(stats[first[0]]), true)
+  assert.equal(unlockedCount(words, stats), LESSON_SIZE + 1)
+
+  Object.assign(stats, mastered(first))
+  assert.equal(unlockedCount(words, stats), LESSON_SIZE + LESSON_AHEAD)
+
+  stats[words[LESSON_SIZE].id] = { correct: LESSON_CORRECT, wrong: 0 }
+  assert.equal(unlockedCount(words, stats), LESSON_SIZE + LESSON_AHEAD + 1)
 })
 
 test("a missed word stays in the deck before its lesson is opened", () => {
