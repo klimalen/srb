@@ -4666,5 +4666,1679 @@ export const dictionary = [
     "serbian": "Čekam da mi pošalju.",
     "transcription": "чЕкам да ми пОшальу.",
     "russian": "Жду, что мне отправят."
+  },
+  {
+    "id": "w38cdc897",
+    "serbian": "putovanje",
+    "transcription": "путовАнье",
+    "russian": "путешествие"
+  },
+  {
+    "id": "w8614b5c4",
+    "serbian": "put",
+    "transcription": "пУт",
+    "russian": "путь / поездка"
+  },
+  {
+    "id": "w2a3d0933",
+    "serbian": "Idem na put.",
+    "transcription": "Идем на пУт.",
+    "russian": "Я еду в поездку."
+  },
+  {
+    "id": "w29e21721",
+    "serbian": "karta",
+    "transcription": "кАрта",
+    "russian": "билет"
+  },
+  {
+    "id": "wa02c7ab2",
+    "serbian": "karte",
+    "transcription": "кАрте",
+    "russian": "билеты"
+  },
+  {
+    "id": "w11f76db1",
+    "serbian": "Imam kartu.",
+    "transcription": "Имам кАрту.",
+    "russian": "У меня есть билет."
+  },
+  {
+    "id": "w8ccad87f",
+    "serbian": "Tražila sam karte.",
+    "transcription": "трАжила сам кАрте.",
+    "russian": "Я искала билеты."
+  },
+  {
+    "id": "w1b0ba231",
+    "serbian": "prtljag",
+    "transcription": "пРтльаг",
+    "russian": "багаж"
+  },
+  {
+    "id": "web36f70f",
+    "serbian": "kofer",
+    "transcription": "кОфер",
+    "russian": "чемодан"
+  },
+  {
+    "id": "w18e0f6ef",
+    "serbian": "dva kofera",
+    "transcription": "двА кОфера",
+    "russian": "два чемодана"
+  },
+  {
+    "id": "w33c4e3e8",
+    "serbian": "Nosite li jedan ili dva kofera?",
+    "transcription": "нОсите ли Едан или двА кОфера?",
+    "russian": "Вы несёте один или два чемодана?"
+  },
+  {
+    "id": "wd99f8bd1",
+    "serbian": "Nosim jednu torbu i jedan kofer.",
+    "transcription": "нОсим Едну тОрбу и Едан кОфер.",
+    "russian": "Я несу одну сумку и один чемодан."
+  },
+  {
+    "id": "we37035a3",
+    "serbian": "stvar",
+    "transcription": "ствАр",
+    "russian": "вещь"
+  },
+  {
+    "id": "wb293fde0",
+    "serbian": "stvari",
+    "transcription": "ствАри",
+    "russian": "вещи"
+  },
+  {
+    "id": "wd8b6aec6",
+    "serbian": "Ne nosim mnogo stvari.",
+    "transcription": "нЕ носим мнОго ствАри.",
+    "russian": "Я не ношу много вещей."
+  },
+  {
+    "id": "wf07fdd29",
+    "serbian": "let",
+    "transcription": "лЕт",
+    "russian": "рейс"
+  },
+  {
+    "id": "wf2bd5781",
+    "serbian": "avion",
+    "transcription": "авИон",
+    "russian": "самолёт"
+  },
+  {
+    "id": "w45966422",
+    "serbian": "aerodrom",
+    "transcription": "аерОдром",
+    "russian": "аэропорт"
+  },
+  {
+    "id": "we629b9a5",
+    "serbian": "na aerodromu",
+    "transcription": "на аерОдрому",
+    "russian": "в аэропорту"
+  },
+  {
+    "id": "w57717719",
+    "serbian": "Kad idete na aerodrom?",
+    "transcription": "кАд Идете на аерОдром?",
+    "russian": "Когда вы едете в аэропорт?"
+  },
+  {
+    "id": "wa10517e8",
+    "serbian": "Idem na aerodrom u pet uveče.",
+    "transcription": "Идем на аерОдром у пЕт Увече.",
+    "russian": "Я еду в аэропорт в пять вечера."
+  },
+  {
+    "id": "w01fb4d0b",
+    "serbian": "Let je u sedam i četrdeset pet.",
+    "transcription": "лЕт е у сЕдам и четрдЕсет пЕт.",
+    "russian": "Рейс в семь сорок пять."
+  },
+  {
+    "id": "wde7c761d",
+    "serbian": "Idem na put devetnaestog oktobra.",
+    "transcription": "Идем на пУт девЕтнаестог октОбра.",
+    "russian": "Я еду в поездку девятнадцатого октября."
+  },
+  {
+    "id": "wf709286f",
+    "serbian": "oktobar",
+    "transcription": "октОбар",
+    "russian": "октябрь"
+  },
+  {
+    "id": "w8cf78e32",
+    "serbian": "avgust",
+    "transcription": "Август",
+    "russian": "август"
+  },
+  {
+    "id": "w01e6fd68",
+    "serbian": "odeća",
+    "transcription": "Одеча",
+    "russian": "одежда"
+  },
+  {
+    "id": "we689b298",
+    "serbian": "keš",
+    "transcription": "кЕш",
+    "russian": "наличные"
+  },
+  {
+    "id": "w4f05853e",
+    "serbian": "mačka",
+    "transcription": "мАчка",
+    "russian": "кошка"
+  },
+  {
+    "id": "w5f4e66a1",
+    "serbian": "tableta",
+    "transcription": "таблЕта",
+    "russian": "таблетка"
+  },
+  {
+    "id": "w8ddfb0f5",
+    "serbian": "tablete",
+    "transcription": "таблЕте",
+    "russian": "таблетки"
+  },
+  {
+    "id": "w0509bf4f",
+    "serbian": "Ja nosim tablete za stomak i za glavu.",
+    "transcription": "Я нОсим таблЕте за стОмак и за глАву.",
+    "russian": "Я ношу таблетки от живота и от головы."
+  },
+  {
+    "id": "w0543279c",
+    "serbian": "stomak",
+    "transcription": "стОмак",
+    "russian": "живот"
+  },
+  {
+    "id": "wbcb44e28",
+    "serbian": "glava",
+    "transcription": "глАва",
+    "russian": "голова"
+  },
+  {
+    "id": "w46cd7fcf",
+    "serbian": "laptop",
+    "transcription": "лАптоп",
+    "russian": "ноутбук"
+  },
+  {
+    "id": "w62a3851b",
+    "serbian": "Nosite li laptop?",
+    "transcription": "нОсите ли лАптоп?",
+    "russian": "Вы берёте ноутбук?"
+  },
+  {
+    "id": "wb2c6c1e2",
+    "serbian": "zbog",
+    "transcription": "збОг",
+    "russian": "из-за"
+  },
+  {
+    "id": "w79ae03d9",
+    "serbian": "zbog posla",
+    "transcription": "због пОсла",
+    "russian": "из-за работы"
+  },
+  {
+    "id": "wd2fca15e",
+    "serbian": "Moram zbog posla.",
+    "transcription": "мОрам због пОсла.",
+    "russian": "Я должна / должен из-за работы."
+  },
+  {
+    "id": "w78c86582",
+    "serbian": "Kad idem na posao, moram da nosim laptop.",
+    "transcription": "кАд Идем на пОсао, мОрам да нОсим лАптоп.",
+    "russian": "Когда я иду на работу, мне нужно брать ноутбук."
+  },
+  {
+    "id": "w00ba2a50",
+    "serbian": "ranije",
+    "transcription": "рАние",
+    "russian": "раньше"
+  },
+  {
+    "id": "w98094179",
+    "serbian": "Idem ranije.",
+    "transcription": "Идем рАние.",
+    "russian": "Я выезжаю раньше."
+  },
+  {
+    "id": "w1e5f8db4",
+    "serbian": "kasno",
+    "transcription": "кАсно",
+    "russian": "поздно"
+  },
+  {
+    "id": "w61b17ce3",
+    "serbian": "kasnije",
+    "transcription": "кАсние",
+    "russian": "позже"
+  },
+  {
+    "id": "wb194d715",
+    "serbian": "kasniti",
+    "transcription": "кАснити",
+    "russian": "опаздывать"
+  },
+  {
+    "id": "w5156b952",
+    "serbian": "Ne volim da kasnim.",
+    "transcription": "нЕ волим да кАсним.",
+    "russian": "Я не люблю опаздывать."
+  },
+  {
+    "id": "w64e9f9c3",
+    "serbian": "na vreme",
+    "transcription": "на врЕме",
+    "russian": "вовремя"
+  },
+  {
+    "id": "w09ab8dc3",
+    "serbian": "miran",
+    "transcription": "мИран",
+    "russian": "спокойный (м.)"
+  },
+  {
+    "id": "wc0e36024",
+    "serbian": "mirna",
+    "transcription": "мИрна",
+    "russian": "спокойная (ж.)"
+  },
+  {
+    "id": "w71d47857",
+    "serbian": "Mirna sam kad sam na vreme.",
+    "transcription": "мИрна сам кАд сам на врЕме.",
+    "russian": "Я спокойна, когда я вовремя."
+  },
+  {
+    "id": "wf6711fdd",
+    "serbian": "sama",
+    "transcription": "сАма",
+    "russian": "одна / сама (ж.)"
+  },
+  {
+    "id": "wb23a4c05",
+    "serbian": "Putuješ li sama?",
+    "transcription": "пУтуеш ли сАма?",
+    "russian": "Ты путешествуешь одна?"
+  },
+  {
+    "id": "wcd8ac446",
+    "serbian": "Ne putujem sama.",
+    "transcription": "нЕ путуем сАма.",
+    "russian": "Я не путешествую одна."
+  },
+  {
+    "id": "w94c7aacc",
+    "serbian": "Putujem sa mojim mužem.",
+    "transcription": "пУтуем са мОйим мУжем.",
+    "russian": "Я путешествую со своим мужем."
+  },
+  {
+    "id": "we9a70904",
+    "serbian": "Živim sama.",
+    "transcription": "жИвим сАма.",
+    "russian": "Я живу одна."
+  },
+  {
+    "id": "w12fc203a",
+    "serbian": "Sama ću uraditi.",
+    "transcription": "сАма чу урАдити.",
+    "russian": "Я сделаю сама."
+  },
+  {
+    "id": "w0df472dd",
+    "serbian": "društvo",
+    "transcription": "дрУштво",
+    "russian": "компания"
+  },
+  {
+    "id": "we31ae5cd",
+    "serbian": "u društvu",
+    "transcription": "у дрУштву",
+    "russian": "в компании"
+  },
+  {
+    "id": "wf8128e3a",
+    "serbian": "Voliš li više da putuješ sama ili u društvu?",
+    "transcription": "вОлиш ли вИше да пУтуеш сАма или у дрУштву?",
+    "russian": "Тебе больше нравится путешествовать одной или в компании?"
+  },
+  {
+    "id": "w977a3f7a",
+    "serbian": "uraditi",
+    "transcription": "урАдити",
+    "russian": "сделать"
+  },
+  {
+    "id": "wf0573a03",
+    "serbian": "poručiti",
+    "transcription": "порУчити",
+    "russian": "заказать (еду)"
+  },
+  {
+    "id": "wf8d76395",
+    "serbian": "Šta želite da poručite?",
+    "transcription": "штА жЕлите да порУчите?",
+    "russian": "Что вы хотите заказать?"
+  },
+  {
+    "id": "wa552ddc0",
+    "serbian": "Može meni?",
+    "transcription": "мОже мЕни?",
+    "russian": "Можно мне?"
+  },
+  {
+    "id": "w379832d9",
+    "serbian": "pica",
+    "transcription": "пИца",
+    "russian": "пицца"
+  },
+  {
+    "id": "wbfd96fc0",
+    "serbian": "pljeskavica",
+    "transcription": "пльЕскавица",
+    "russian": "плескавица"
+  },
+  {
+    "id": "wf07dbb4d",
+    "serbian": "Jednu picu i jednu pljeskavicu.",
+    "transcription": "Едну пИцу и Едну пльЕскавицу.",
+    "russian": "Одну пиццу и одну плескавицу."
+  },
+  {
+    "id": "w943160cc",
+    "serbian": "piće",
+    "transcription": "пИче",
+    "russian": "напиток"
+  },
+  {
+    "id": "w92166b83",
+    "serbian": "Nešto za piće?",
+    "transcription": "нЕшто за пИче?",
+    "russian": "Что-нибудь попить?"
+  },
+  {
+    "id": "wc018f381",
+    "serbian": "kapućino",
+    "transcription": "капучИно",
+    "russian": "капучино"
+  },
+  {
+    "id": "w2f9fc60a",
+    "serbian": "Jedan kapućino.",
+    "transcription": "Едан капучИно.",
+    "russian": "Один капучино."
+  },
+  {
+    "id": "w8b6221bd",
+    "serbian": "zasad",
+    "transcription": "зАсад",
+    "russian": "пока"
+  },
+  {
+    "id": "w5bac6d90",
+    "serbian": "Zasad ne.",
+    "transcription": "зАсад нЕ.",
+    "russian": "Пока нет."
+  },
+  {
+    "id": "w95af091c",
+    "serbian": "nešto",
+    "transcription": "нЕшто",
+    "russian": "что-то"
+  },
+  {
+    "id": "w38dcd922",
+    "serbian": "naručiti",
+    "transcription": "нарУчити",
+    "russian": "заказать"
+  },
+  {
+    "id": "w6f6e8898",
+    "serbian": "Izvinite.",
+    "transcription": "извИните.",
+    "russian": "Извините."
+  },
+  {
+    "id": "w36e17f99",
+    "serbian": "izviniti",
+    "transcription": "извИнити",
+    "russian": "извинить"
+  },
+  {
+    "id": "w1d1653af",
+    "serbian": "Izvinite, naručili smo picu.",
+    "transcription": "извИните, нарУчили смо пИцу.",
+    "russian": "Извините, мы заказали пиццу."
+  },
+  {
+    "id": "w36975a6c",
+    "serbian": "Izvinite, naručili smo cezar picu, a ne margaritu.",
+    "transcription": "извИните, нарУчили смо цЕзар пИцу, а нЕ маргарИту.",
+    "russian": "Извините, мы заказали пиццу «Цезарь», а не «Маргариту»."
+  },
+  {
+    "id": "wfd30e60b",
+    "serbian": "preporučiti",
+    "transcription": "препорУчити",
+    "russian": "порекомендовать"
+  },
+  {
+    "id": "w081464c9",
+    "serbian": "Mogu vam preporučiti.",
+    "transcription": "мОгу вам препорУчити.",
+    "russian": "Могу вам порекомендовать."
+  },
+  {
+    "id": "w38b49b49",
+    "serbian": "Jesi li zauzeta?",
+    "transcription": "Еси ли зАузета?",
+    "russian": "Ты занята?"
+  },
+  {
+    "id": "w5f865edc",
+    "serbian": "Trebaš mi.",
+    "transcription": "трЕбаш ми.",
+    "russian": "Ты мне нужна."
+  },
+  {
+    "id": "w05bae3a1",
+    "serbian": "Radiš li nešto?",
+    "transcription": "рАдиш ли нЕшто?",
+    "russian": "Ты что-нибудь делаешь?"
+  },
+  {
+    "id": "wa8d99c8e",
+    "serbian": "za mene",
+    "transcription": "за мЕне",
+    "russian": "для меня"
+  },
+  {
+    "id": "w1043d703",
+    "serbian": "za tebe",
+    "transcription": "за тЕбе",
+    "russian": "для тебя"
+  },
+  {
+    "id": "w3244a14a",
+    "serbian": "za njega",
+    "transcription": "за ньЕга",
+    "russian": "для него"
+  },
+  {
+    "id": "wf8a68b52",
+    "serbian": "za nju",
+    "transcription": "за ньУ",
+    "russian": "для неё"
+  },
+  {
+    "id": "wfe0c0b22",
+    "serbian": "za nas",
+    "transcription": "за нАс",
+    "russian": "для нас"
+  },
+  {
+    "id": "w3298ee9b",
+    "serbian": "za vas",
+    "transcription": "за вАс",
+    "russian": "для вас"
+  },
+  {
+    "id": "w090f908d",
+    "serbian": "za njih",
+    "transcription": "за ньИх",
+    "russian": "для них"
+  },
+  {
+    "id": "w62e354a9",
+    "serbian": "plan",
+    "transcription": "плАн",
+    "russian": "план"
+  },
+  {
+    "id": "w2ea7aa25",
+    "serbian": "Imam plan.",
+    "transcription": "Имам плАн.",
+    "russian": "У меня есть план."
+  },
+  {
+    "id": "wd2d9cde4",
+    "serbian": "Imam planove.",
+    "transcription": "Имам плАнове.",
+    "russian": "У меня есть планы."
+  },
+  {
+    "id": "wc92bc151",
+    "serbian": "račun",
+    "transcription": "рАчун",
+    "russian": "счёт"
+  },
+  {
+    "id": "w2aea9b54",
+    "serbian": "otvoriti",
+    "transcription": "отвОрити",
+    "russian": "открыть"
+  },
+  {
+    "id": "w540dcfb2",
+    "serbian": "otvorim",
+    "transcription": "отвОрим",
+    "russian": "я открою"
+  },
+  {
+    "id": "w431db6f1",
+    "serbian": "Želim da otvorim račun.",
+    "transcription": "жЕлим да отвОрим рАчун.",
+    "russian": "Я хочу открыть счёт."
+  },
+  {
+    "id": "w2d2a5148",
+    "serbian": "birati",
+    "transcription": "бИрати",
+    "russian": "выбирать"
+  },
+  {
+    "id": "wf1d4ebd7",
+    "serbian": "biram",
+    "transcription": "бИрам",
+    "russian": "я выбираю"
+  },
+  {
+    "id": "wbedfd7f9",
+    "serbian": "izabrati",
+    "transcription": "изАбрати",
+    "russian": "выбрать"
+  },
+  {
+    "id": "w752769a9",
+    "serbian": "izaberem",
+    "transcription": "изАберем",
+    "russian": "я выберу"
+  },
+  {
+    "id": "wb0374b7b",
+    "serbian": "rezervisati",
+    "transcription": "резервИсати",
+    "russian": "бронировать"
+  },
+  {
+    "id": "wdf4ec27f",
+    "serbian": "rezervišem",
+    "transcription": "резервИшем",
+    "russian": "я бронирую"
+  },
+  {
+    "id": "wa28e061f",
+    "serbian": "Želim da rezervišem.",
+    "transcription": "жЕлим да резервИшем.",
+    "russian": "Я хочу забронировать."
+  },
+  {
+    "id": "wdcfa4795",
+    "serbian": "pisati",
+    "transcription": "пИсати",
+    "russian": "писать"
+  },
+  {
+    "id": "w20898426",
+    "serbian": "pišem",
+    "transcription": "пИшем",
+    "russian": "я пишу"
+  },
+  {
+    "id": "w9beaacce",
+    "serbian": "Izvinite što pišem kasno.",
+    "transcription": "извИните штО пИшем кАсно.",
+    "russian": "Извините, что пишу поздно."
+  },
+  {
+    "id": "w65c24190",
+    "serbian": "probati",
+    "transcription": "прОбати",
+    "russian": "пробовать"
+  },
+  {
+    "id": "wd5f08c92",
+    "serbian": "probam",
+    "transcription": "прОбам",
+    "russian": "я пробую"
+  },
+  {
+    "id": "w22702f62",
+    "serbian": "pojesti",
+    "transcription": "пОести",
+    "russian": "съесть"
+  },
+  {
+    "id": "w7f53d6c4",
+    "serbian": "spakovati se",
+    "transcription": "спАковати се",
+    "russian": "собраться (вещи)"
+  },
+  {
+    "id": "wdac1514e",
+    "serbian": "spakujem se",
+    "transcription": "спАкуем се",
+    "russian": "я собираю вещи"
+  },
+  {
+    "id": "w2eca13cb",
+    "serbian": "Ja nisam stigla da se spakujem.",
+    "transcription": "Я нИсам стИгла да се спАкуем.",
+    "russian": "Я не успела собраться."
+  },
+  {
+    "id": "w48703239",
+    "serbian": "doručak",
+    "transcription": "дОручак",
+    "russian": "завтрак"
+  },
+  {
+    "id": "wb8b08eeb",
+    "serbian": "Nisam stigla da završim doručak.",
+    "transcription": "нИсам стИгла да завРшим дОручак.",
+    "russian": "Я не успела закончить завтрак."
+  },
+  {
+    "id": "w51c6fdce",
+    "serbian": "bio",
+    "transcription": "бИо",
+    "russian": "был"
+  },
+  {
+    "id": "wc1f870ec",
+    "serbian": "bila",
+    "transcription": "бИла",
+    "russian": "была"
+  },
+  {
+    "id": "w87442894",
+    "serbian": "bilo",
+    "transcription": "бИло",
+    "russian": "было"
+  },
+  {
+    "id": "wecae647c",
+    "serbian": "bili",
+    "transcription": "бИли",
+    "russian": "были"
+  },
+  {
+    "id": "w0d718c03",
+    "serbian": "išao",
+    "transcription": "Ишао",
+    "russian": "шёл / ехал"
+  },
+  {
+    "id": "w3815c6c5",
+    "serbian": "išla",
+    "transcription": "Ишла",
+    "russian": "шла / ехала"
+  },
+  {
+    "id": "w7276dcfd",
+    "serbian": "išli",
+    "transcription": "Ишли",
+    "russian": "шли / ехали"
+  },
+  {
+    "id": "wf4e72780",
+    "serbian": "doći",
+    "transcription": "дОчи",
+    "russian": "прийти / приехать"
+  },
+  {
+    "id": "w77b8e8c8",
+    "serbian": "dođem",
+    "transcription": "дОджем",
+    "russian": "я приду / приеду"
+  },
+  {
+    "id": "wea483adb",
+    "serbian": "došao",
+    "transcription": "дОшао",
+    "russian": "пришёл / приехал"
+  },
+  {
+    "id": "w00554263",
+    "serbian": "došla",
+    "transcription": "дОшла",
+    "russian": "пришла / приехала"
+  },
+  {
+    "id": "w668cb48b",
+    "serbian": "došli",
+    "transcription": "дОшли",
+    "russian": "пришли / приехали"
+  },
+  {
+    "id": "w5bfba1e8",
+    "serbian": "naći",
+    "transcription": "нАчи",
+    "russian": "найти"
+  },
+  {
+    "id": "w68385503",
+    "serbian": "nađem",
+    "transcription": "нАджем",
+    "russian": "я найду"
+  },
+  {
+    "id": "w2f506626",
+    "serbian": "našao",
+    "transcription": "нАшао",
+    "russian": "нашёл"
+  },
+  {
+    "id": "w1e6b797e",
+    "serbian": "našla",
+    "transcription": "нАшла",
+    "russian": "нашла"
+  },
+  {
+    "id": "w3c3960be",
+    "serbian": "našli",
+    "transcription": "нАшли",
+    "russian": "нашли"
+  },
+  {
+    "id": "w70fb5b05",
+    "serbian": "stići",
+    "transcription": "стИчи",
+    "russian": "успеть / прибыть"
+  },
+  {
+    "id": "we48fd996",
+    "serbian": "stignem",
+    "transcription": "стИгнем",
+    "russian": "я успею / прибуду"
+  },
+  {
+    "id": "w778fa1be",
+    "serbian": "stigao",
+    "transcription": "стИгао",
+    "russian": "успел / прибыл"
+  },
+  {
+    "id": "w047109ed",
+    "serbian": "stigla",
+    "transcription": "стИгла",
+    "russian": "успела / прибыла"
+  },
+  {
+    "id": "w22c6e055",
+    "serbian": "stigli",
+    "transcription": "стИгли",
+    "russian": "успели / прибыли"
+  },
+  {
+    "id": "wa88136bd",
+    "serbian": "videti",
+    "transcription": "вИдети",
+    "russian": "видеть"
+  },
+  {
+    "id": "w1999d1b8",
+    "serbian": "video",
+    "transcription": "вИдео",
+    "russian": "видел"
+  },
+  {
+    "id": "w059d8278",
+    "serbian": "videla",
+    "transcription": "вИдела",
+    "russian": "видела"
+  },
+  {
+    "id": "w21dff4d2",
+    "serbian": "ostati",
+    "transcription": "Остати",
+    "russian": "остаться"
+  },
+  {
+    "id": "webeab732",
+    "serbian": "ostala",
+    "transcription": "Остала",
+    "russian": "осталась"
+  },
+  {
+    "id": "w72c8e31b",
+    "serbian": "vratiti",
+    "transcription": "врАтити",
+    "russian": "вернуть"
+  },
+  {
+    "id": "wa0265b17",
+    "serbian": "vratiti se",
+    "transcription": "врАтити се",
+    "russian": "вернуться"
+  },
+  {
+    "id": "w396d0f7d",
+    "serbian": "Vratila sam se kasno kući.",
+    "transcription": "врАтила сам се кАсно кУчи.",
+    "russian": "Я поздно вернулась домой."
+  },
+  {
+    "id": "w5947c5ea",
+    "serbian": "U ponedeljak uveče sam se vratila.",
+    "transcription": "у понЕдельак Увече сам се врАтила.",
+    "russian": "В понедельник вечером я вернулась."
+  },
+  {
+    "id": "webfaf3c0",
+    "serbian": "Nisam se vratila.",
+    "transcription": "нИсам се врАтила.",
+    "russian": "Я не вернулась."
+  },
+  {
+    "id": "w77d56b42",
+    "serbian": "Ona se vratila.",
+    "transcription": "Она се врАтила.",
+    "russian": "Она вернулась."
+  },
+  {
+    "id": "w91c0eda5",
+    "serbian": "Vratila sam joj sto evra.",
+    "transcription": "врАтила сам йой стО Евра.",
+    "russian": "Я вернула ей сто евро."
+  },
+  {
+    "id": "w08733dd6",
+    "serbian": "Ona mi je vratila sto evra.",
+    "transcription": "Она ми е врАтила стО Евра.",
+    "russian": "Она вернула мне сто евро."
+  },
+  {
+    "id": "w2cc7cd24",
+    "serbian": "evro",
+    "transcription": "Евро",
+    "russian": "евро"
+  },
+  {
+    "id": "we9e9225d",
+    "serbian": "preseliti se",
+    "transcription": "пресЕлити се",
+    "russian": "переехать"
+  },
+  {
+    "id": "w11cf578c",
+    "serbian": "preselio",
+    "transcription": "пресЕлио",
+    "russian": "переехал"
+  },
+  {
+    "id": "wdca1a324",
+    "serbian": "preselila",
+    "transcription": "пресЕлила",
+    "russian": "переехала"
+  },
+  {
+    "id": "wa0cb2344",
+    "serbian": "preselili",
+    "transcription": "пресЕлили",
+    "russian": "переехали"
+  },
+  {
+    "id": "w7f023b1e",
+    "serbian": "Preselila sam se.",
+    "transcription": "пресЕлила сам се.",
+    "russian": "Я переехала."
+  },
+  {
+    "id": "w8b62116a",
+    "serbian": "Radila sam do kasno.",
+    "transcription": "рАдила сам до кАсно.",
+    "russian": "Я работала допоздна."
+  },
+  {
+    "id": "w19631e29",
+    "serbian": "projekat",
+    "transcription": "прОекат",
+    "russian": "проект"
+  },
+  {
+    "id": "w445510c8",
+    "serbian": "projekti",
+    "transcription": "прОекти",
+    "russian": "проекты"
+  },
+  {
+    "id": "wdf4059e5",
+    "serbian": "Sviđaju mi se projekti.",
+    "transcription": "свИджаю ми се прОекти.",
+    "russian": "Мне нравятся проекты."
+  },
+  {
+    "id": "we4d57c90",
+    "serbian": "Sviđali su mi se projekti.",
+    "transcription": "свИджали су ми се прОекти.",
+    "russian": "Мне нравились проекты."
+  },
+  {
+    "id": "w88a4c112",
+    "serbian": "Nisam htela da jedem slatko.",
+    "transcription": "нИсам хтЕла да Едем слАтко.",
+    "russian": "Я не хотела есть сладкое."
+  },
+  {
+    "id": "w0ba8341c",
+    "serbian": "slatko",
+    "transcription": "слАтко",
+    "russian": "сладкое"
+  },
+  {
+    "id": "wb7d20bbf",
+    "serbian": "Nisam volela da treniram.",
+    "transcription": "нИсам вОлела да тренИрам.",
+    "russian": "Я не любила тренироваться."
+  },
+  {
+    "id": "wef7a7a0d",
+    "serbian": "debeo",
+    "transcription": "дЕбео",
+    "russian": "толстый (м.)"
+  },
+  {
+    "id": "w7a22c9cc",
+    "serbian": "debela",
+    "transcription": "дЕбела",
+    "russian": "толстая (ж.)"
+  },
+  {
+    "id": "we414e5c1",
+    "serbian": "gde",
+    "transcription": "гдЕ",
+    "russian": "где"
+  },
+  {
+    "id": "we453ce0e",
+    "serbian": "odmor",
+    "transcription": "Одмор",
+    "russian": "отпуск / отдых"
+  },
+  {
+    "id": "w71bf4052",
+    "serbian": "na odmoru",
+    "transcription": "на Одмору",
+    "russian": "в отпуске"
+  },
+  {
+    "id": "w00d3ccf7",
+    "serbian": "poslednji",
+    "transcription": "пОследньи",
+    "russian": "последний"
+  },
+  {
+    "id": "w63d39fc1",
+    "serbian": "poslednji put",
+    "transcription": "пОследньи пУт",
+    "russian": "в последний раз"
+  },
+  {
+    "id": "w6a10513c",
+    "serbian": "Gde ste bili poslednjeg puta na odmoru?",
+    "transcription": "гдЕ сте бИли пОследньег пУта на Одмору?",
+    "russian": "Где вы были в последний раз в отпуске?"
+  },
+  {
+    "id": "w27f5b559",
+    "serbian": "Ja sam na odmoru.",
+    "transcription": "Я сам на Одмору.",
+    "russian": "Я в отпуске."
+  },
+  {
+    "id": "wadcb58a2",
+    "serbian": "Ja sam na odmoru u Norveškoj.",
+    "transcription": "Я сам на Одмору у нОрвешкой.",
+    "russian": "Я в отпуске в Норвегии."
+  },
+  {
+    "id": "w6ad385bf",
+    "serbian": "Kakvo je bilo vreme?",
+    "transcription": "кАкво е бИло врЕме?",
+    "russian": "Какая была погода?"
+  },
+  {
+    "id": "w2df37a88",
+    "serbian": "Bilo je toplo.",
+    "transcription": "бИло е тОпло.",
+    "russian": "Было тепло."
+  },
+  {
+    "id": "w078a3b64",
+    "serbian": "toplo",
+    "transcription": "тОпло",
+    "russian": "тепло"
+  },
+  {
+    "id": "w5b10e3b7",
+    "serbian": "Nije bilo hladno.",
+    "transcription": "нИе бИло хлАдно.",
+    "russian": "Не было холодно."
+  },
+  {
+    "id": "wa953efd2",
+    "serbian": "hladan",
+    "transcription": "хлАдан",
+    "russian": "холодный"
+  },
+  {
+    "id": "w1e7e93a0",
+    "serbian": "hladno",
+    "transcription": "хлАдно",
+    "russian": "холодно"
+  },
+  {
+    "id": "w4f344b5c",
+    "serbian": "Bio je avgust.",
+    "transcription": "бИо е Август.",
+    "russian": "Был август."
+  },
+  {
+    "id": "w2434e58c",
+    "serbian": "Ostala sam tri dana.",
+    "transcription": "Остала сам трИ дАна.",
+    "russian": "Я осталась на три дня."
+  },
+  {
+    "id": "waf24e2c5",
+    "serbian": "tata",
+    "transcription": "тАта",
+    "russian": "папа"
+  },
+  {
+    "id": "wc9c5148d",
+    "serbian": "Videla sam mamu i tatu.",
+    "transcription": "вИдела сам мАму и тАту.",
+    "russian": "Я видела маму и папу."
+  },
+  {
+    "id": "w9aec4aaa",
+    "serbian": "srećan",
+    "transcription": "срЕчан",
+    "russian": "счастливый (м.)"
+  },
+  {
+    "id": "we7035add",
+    "serbian": "srećna",
+    "transcription": "срЕчна",
+    "russian": "счастливая (ж.)"
+  },
+  {
+    "id": "wa8431e27",
+    "serbian": "srećni",
+    "transcription": "срЕчни",
+    "russian": "счастливые"
+  },
+  {
+    "id": "w428ec224",
+    "serbian": "Mama i tata su bili srećni kad sam došla.",
+    "transcription": "мАма и тАта су бИли срЕчни кАд сам дОшла.",
+    "russian": "Мама и папа были рады, когда я приехала."
+  },
+  {
+    "id": "wa53a3e6b",
+    "serbian": "I ja sam bila srećna.",
+    "transcription": "и Я сам бИла срЕчна.",
+    "russian": "И я тоже была рада."
+  },
+  {
+    "id": "wb7e12f32",
+    "serbian": "I ja isto.",
+    "transcription": "и Я Исто.",
+    "russian": "И я тоже."
+  },
+  {
+    "id": "wc3123b3f",
+    "serbian": "leto",
+    "transcription": "лЕто",
+    "russian": "лето"
+  },
+  {
+    "id": "wfe5eaa2b",
+    "serbian": "jako",
+    "transcription": "Яко",
+    "russian": "очень"
+  },
+  {
+    "id": "w157c8e59",
+    "serbian": "Ovde je leto, ali nije jako toplo.",
+    "transcription": "Овде е лЕто, али нИе Яко тОпло.",
+    "russian": "Здесь лето, но не очень тепло."
+  },
+  {
+    "id": "w4d501723",
+    "serbian": "hotel",
+    "transcription": "хОтел",
+    "russian": "отель"
+  },
+  {
+    "id": "w6a79319d",
+    "serbian": "U hotelu je prijatno.",
+    "transcription": "у хОтелу е прИятно.",
+    "russian": "В отеле приятно."
+  },
+  {
+    "id": "wfc86e537",
+    "serbian": "Čist je i nije skup.",
+    "transcription": "чИст е и нИе скУп.",
+    "russian": "Он чистый и недорогой."
+  },
+  {
+    "id": "w7c179724",
+    "serbian": "prijatan",
+    "transcription": "прИятан",
+    "russian": "приятный (м.)"
+  },
+  {
+    "id": "w6bf93317",
+    "serbian": "prijatna",
+    "transcription": "прИятна",
+    "russian": "приятная (ж.)"
+  },
+  {
+    "id": "wd3e12607",
+    "serbian": "prijatno",
+    "transcription": "прИятно",
+    "russian": "приятно"
+  },
+  {
+    "id": "w9c8257cd",
+    "serbian": "prijatni",
+    "transcription": "прИятни",
+    "russian": "приятные"
+  },
+  {
+    "id": "w9920e32c",
+    "serbian": "ljudi",
+    "transcription": "льУди",
+    "russian": "люди"
+  },
+  {
+    "id": "wf6bbcc3a",
+    "serbian": "Ljudi su prijatni.",
+    "transcription": "льУди су прИятни.",
+    "russian": "Люди приятные."
+  },
+  {
+    "id": "wc8dfc575",
+    "serbian": "Hrana je odlična.",
+    "transcription": "хрАна е Одлична.",
+    "russian": "Еда отличная."
+  },
+  {
+    "id": "we81cfb9d",
+    "serbian": "posetiti",
+    "transcription": "пОсетити",
+    "russian": "посетить"
+  },
+  {
+    "id": "w16dc5785",
+    "serbian": "Posetila sam muzej.",
+    "transcription": "пОсетила сам мУзей.",
+    "russian": "Я посетила музей."
+  },
+  {
+    "id": "we0d7fd01",
+    "serbian": "galerija",
+    "transcription": "галЕрия",
+    "russian": "галерея"
+  },
+  {
+    "id": "w17ef5e94",
+    "serbian": "centar",
+    "transcription": "цЕнтар",
+    "russian": "центр"
+  },
+  {
+    "id": "w33346b59",
+    "serbian": "moderan",
+    "transcription": "мОдеран",
+    "russian": "современный (м.)"
+  },
+  {
+    "id": "w240f2b81",
+    "serbian": "moderne",
+    "transcription": "мОдерне",
+    "russian": "современные (ж.)"
+  },
+  {
+    "id": "wec30932d",
+    "serbian": "Grad ima moderne zgrade.",
+    "transcription": "грАд Има мОдерне згрАде.",
+    "russian": "В городе современные здания."
+  },
+  {
+    "id": "w540ea154",
+    "serbian": "velik",
+    "transcription": "вЕлик",
+    "russian": "большой (м.)"
+  },
+  {
+    "id": "wf4e32b5f",
+    "serbian": "velika",
+    "transcription": "вЕлика",
+    "russian": "большая (ж.)"
+  },
+  {
+    "id": "w93cbb726",
+    "serbian": "veliko",
+    "transcription": "вЕлико",
+    "russian": "большое (ср.)"
+  },
+  {
+    "id": "w2c5b3494",
+    "serbian": "iznenađenje",
+    "transcription": "изненаджЕнье",
+    "russian": "сюрприз / неожиданность"
+  },
+  {
+    "id": "w75a424fc",
+    "serbian": "To je bilo iznenađenje.",
+    "transcription": "тО е бИло изненаджЕнье.",
+    "russian": "Это было неожиданностью."
+  },
+  {
+    "id": "w5f296e32",
+    "serbian": "poznat",
+    "transcription": "пОзнат",
+    "russian": "известный (м.)"
+  },
+  {
+    "id": "wbe222928",
+    "serbian": "poznata",
+    "transcription": "пОзната",
+    "russian": "известная (ж.)"
+  },
+  {
+    "id": "wdfb4e6d3",
+    "serbian": "Poznat je po starom gradu.",
+    "transcription": "пОзнат е по стАром грАду.",
+    "russian": "Он известен старым городом."
+  },
+  {
+    "id": "wffd7ef66",
+    "serbian": "baš",
+    "transcription": "бАш",
+    "russian": "прямо / очень (разг.)"
+  },
+  {
+    "id": "wbbbf8b75",
+    "serbian": "Vreme je baš prijatno.",
+    "transcription": "врЕме е бАш прИятно.",
+    "russian": "Погода очень приятная."
+  },
+  {
+    "id": "w2343a8ac",
+    "serbian": "Svaki dan se šetam po gradu.",
+    "transcription": "свАки дАн се шЕтам по грАду.",
+    "russian": "Каждый день я гуляю по городу."
+  },
+  {
+    "id": "we5056055",
+    "serbian": "kancelarija",
+    "transcription": "канцелАрия",
+    "russian": "офис"
+  },
+  {
+    "id": "wbc7a062e",
+    "serbian": "pozdraviti",
+    "transcription": "пОздравити",
+    "russian": "передать привет"
+  },
+  {
+    "id": "w51b0a100",
+    "serbian": "Pozdravi sve u kancelariji.",
+    "transcription": "пОздрави свЕ у канцелАрийи.",
+    "russian": "Передай всем привет в офисе."
+  },
+  {
+    "id": "wfedb137d",
+    "serbian": "Vidimo se uskoro.",
+    "transcription": "вИдимо се Ускоро.",
+    "russian": "До скорой встречи."
+  },
+  {
+    "id": "wde5b3d46",
+    "serbian": "ljubiti",
+    "transcription": "льУбити",
+    "russian": "целовать"
+  },
+  {
+    "id": "w4752f7b4",
+    "serbian": "Ljubim vas.",
+    "transcription": "льУбим вАс.",
+    "russian": "Целую вас."
+  },
+  {
+    "id": "w24ead2e7",
+    "serbian": "intervju",
+    "transcription": "интЕрвю",
+    "russian": "собеседование"
+  },
+  {
+    "id": "wb6b86c0d",
+    "serbian": "Išao sam na intervju.",
+    "transcription": "Ишао сам на интЕрвю.",
+    "russian": "Я ходил на собеседование."
+  },
+  {
+    "id": "w5dcd322b",
+    "serbian": "žuriti",
+    "transcription": "жУрити",
+    "russian": "торопиться"
+  },
+  {
+    "id": "we8f157e0",
+    "serbian": "žurim",
+    "transcription": "жУрим",
+    "russian": "я тороплюсь"
+  },
+  {
+    "id": "w92266613",
+    "serbian": "Žurio sam i bio sam nervozan.",
+    "transcription": "жУрио сам и бИо сам нЕрвозан.",
+    "russian": "Я торопился и нервничал."
+  },
+  {
+    "id": "w40fd60bc",
+    "serbian": "nervozan",
+    "transcription": "нЕрвозан",
+    "russian": "нервный (м.)"
+  },
+  {
+    "id": "w480346cb",
+    "serbian": "nervozna",
+    "transcription": "нЕрвозна",
+    "russian": "нервная (ж.)"
+  },
+  {
+    "id": "web262f8c",
+    "serbian": "ustati",
+    "transcription": "Устати",
+    "russian": "встать"
+  },
+  {
+    "id": "w774f3664",
+    "serbian": "ustanem",
+    "transcription": "Устанем",
+    "russian": "я встану"
+  },
+  {
+    "id": "wb05aa035",
+    "serbian": "Ustao sam kasnije.",
+    "transcription": "Устао сам кАсние.",
+    "russian": "Я встал позже."
+  },
+  {
+    "id": "w602891d7",
+    "serbian": "Morao sam da vozim brzo.",
+    "transcription": "мОрао сам да вОзим бРзо.",
+    "russian": "Мне пришлось быстро вести машину."
+  },
+  {
+    "id": "w084136fe",
+    "serbian": "Trebalo je da budem u Beogradu ujutru.",
+    "transcription": "трЕбало е да бУдем у беОграду Уютру.",
+    "russian": "Нужно было быть в Белграде утром."
+  },
+  {
+    "id": "w96d73dd7",
+    "serbian": "Stigao sam u firmu.",
+    "transcription": "стИгао сам у фИрму.",
+    "russian": "Я приехал в фирму."
+  },
+  {
+    "id": "wea7062dc",
+    "serbian": "Video sam da sam zaboravio telefon.",
+    "transcription": "вИдео сам да сам забОравио телЕфон.",
+    "russian": "Я увидел, что забыл телефон."
+  },
+  {
+    "id": "w1e6612ab",
+    "serbian": "Videla sam da sam zaboravila.",
+    "transcription": "вИдела сам да сам забОравила.",
+    "russian": "Я увидела, что забыла."
+  },
+  {
+    "id": "w7bc9e150",
+    "serbian": "mobilni",
+    "transcription": "мОбилни",
+    "russian": "мобильный"
+  },
+  {
+    "id": "w441f504f",
+    "serbian": "zaboraviti",
+    "transcription": "забОравити",
+    "russian": "забыть"
+  },
+  {
+    "id": "w74899df6",
+    "serbian": "zaboravio",
+    "transcription": "забОравио",
+    "russian": "забыл"
+  },
+  {
+    "id": "w79750e8a",
+    "serbian": "zaboravila",
+    "transcription": "забОравила",
+    "russian": "забыла"
+  },
+  {
+    "id": "w64fb18cc",
+    "serbian": "moći",
+    "transcription": "мОчи",
+    "russian": "мочь"
+  },
+  {
+    "id": "w291d7f3e",
+    "serbian": "mogu",
+    "transcription": "мОгу",
+    "russian": "я могу"
+  },
+  {
+    "id": "w770e089b",
+    "serbian": "mogao",
+    "transcription": "мОгао",
+    "russian": "мог"
+  },
+  {
+    "id": "w366de3f7",
+    "serbian": "mogla",
+    "transcription": "мОгла",
+    "russian": "могла"
+  },
+  {
+    "id": "w1efb3ff7",
+    "serbian": "mogli",
+    "transcription": "мОгли",
+    "russian": "могли"
+  },
+  {
+    "id": "w765a6dfa",
+    "serbian": "setiti se",
+    "transcription": "сЕтити се",
+    "russian": "вспомнить"
+  },
+  {
+    "id": "w89c25f1c",
+    "serbian": "sećati se",
+    "transcription": "сЕчати се",
+    "russian": "помнить"
+  },
+  {
+    "id": "wd8400969",
+    "serbian": "Sećam se.",
+    "transcription": "сЕчам се.",
+    "russian": "Я помню."
+  },
+  {
+    "id": "w72bbe542",
+    "serbian": "Ne sećam se.",
+    "transcription": "нЕ сечам се.",
+    "russian": "Я не помню."
+  },
+  {
+    "id": "w354b9df1",
+    "serbian": "Ne mogu da se setim.",
+    "transcription": "нЕ могу да се сЕтим.",
+    "russian": "Я не могу вспомнить."
+  },
+  {
+    "id": "w24ca22ec",
+    "serbian": "Nisam mogao da se setim njegovog imena.",
+    "transcription": "нИсам мОгао да се сЕтим ньЕговог имЕна.",
+    "russian": "Я не мог вспомнить его имя."
+  },
+  {
+    "id": "w3c789a91",
+    "serbian": "stajati",
+    "transcription": "стАяти",
+    "russian": "стоять"
+  },
+  {
+    "id": "wfef1dab9",
+    "serbian": "stojim",
+    "transcription": "стОйим",
+    "russian": "я стою"
+  },
+  {
+    "id": "wda2512f0",
+    "serbian": "Stajao sam na ulazu.",
+    "transcription": "стАяо сам на Улазу.",
+    "russian": "Я стоял у входа."
+  },
+  {
+    "id": "w8f272904",
+    "serbian": "ulaz",
+    "transcription": "Улаз",
+    "russian": "вход"
+  },
+  {
+    "id": "w17023066",
+    "serbian": "Nisam znao šta da radim.",
+    "transcription": "нИсам знАо штА да рАдим.",
+    "russian": "Я не знал, что делать."
+  },
+  {
+    "id": "w9ca63fa8",
+    "serbian": "sin",
+    "transcription": "сИн",
+    "russian": "сын"
+  },
+  {
+    "id": "wc5aaf51d",
+    "serbian": "Setio sam se da zovem sina.",
+    "transcription": "сЕтио сам се да зОвем сИна.",
+    "russian": "Я вспомнил, что надо позвонить сыну."
+  },
+  {
+    "id": "wcd354537",
+    "serbian": "dete",
+    "transcription": "дЕте",
+    "russian": "ребёнок"
+  },
+  {
+    "id": "we9a00f0f",
+    "serbian": "uključiti",
+    "transcription": "укльУчити",
+    "russian": "включить"
+  },
+  {
+    "id": "w3bb590b7",
+    "serbian": "Uključio sam telefon.",
+    "transcription": "укльУчио сам телЕфон.",
+    "russian": "Я включил телефон."
+  },
+  {
+    "id": "w8654d031",
+    "serbian": "blokirati se",
+    "transcription": "блокИрати се",
+    "russian": "замереть"
+  },
+  {
+    "id": "w4cf2519e",
+    "serbian": "Blokirao sam se.",
+    "transcription": "блокИрао сам се.",
+    "russian": "Я замер."
+  },
+  {
+    "id": "webbf1ed3",
+    "serbian": "stvarno",
+    "transcription": "ствАрно",
+    "russian": "правда / серьёзно"
+  },
+  {
+    "id": "wf9509b95",
+    "serbian": "kraj",
+    "transcription": "крАй",
+    "russian": "конец"
+  },
+  {
+    "id": "w770fd8bf",
+    "serbian": "na kraju",
+    "transcription": "на крАю",
+    "russian": "в конце"
+  },
+  {
+    "id": "w487b337c",
+    "serbian": "Sve je na kraju bilo dobro.",
+    "transcription": "свЕ е на крАю бИло дОбро.",
+    "russian": "В конце всё было хорошо."
+  },
+  {
+    "id": "w4aa6f1bf",
+    "serbian": "Dobio sam posao.",
+    "transcription": "дОбио сам пОсао.",
+    "russian": "Я получил работу."
+  },
+  {
+    "id": "wd7c83afe",
+    "serbian": "važan",
+    "transcription": "вАжан",
+    "russian": "важный"
+  },
+  {
+    "id": "wab68ab70",
+    "serbian": "važno",
+    "transcription": "вАжно",
+    "russian": "важно"
+  },
+  {
+    "id": "w4b6737df",
+    "serbian": "najvažnije",
+    "transcription": "найвАжние",
+    "russian": "самое важное"
+  },
+  {
+    "id": "w370d9926",
+    "serbian": "To je najvažnije.",
+    "transcription": "тО е найвАжние.",
+    "russian": "Это самое важное."
+  },
+  {
+    "id": "wfe1c3d9a",
+    "serbian": "broj",
+    "transcription": "брОй",
+    "russian": "номер"
+  },
+  {
+    "id": "w879ccc31",
+    "serbian": "čovek",
+    "transcription": "чОвек",
+    "russian": "человек"
   }
 ]

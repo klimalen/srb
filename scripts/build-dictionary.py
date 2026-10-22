@@ -64,7 +64,7 @@ CLITICS = {"sam", "si", "je", "smo", "ste", "su", "se", "li"}
 SHORT_DATIVE = {"mi", "mu", "joj", "im"}
 PREPOSITIONS = {
     "u", "na", "za", "sa", "s", "od", "do", "iz", "kod", "bez",
-    "pre", "posle", "po", "k", "ka", "o", "pri", "van",
+    "pre", "posle", "po", "k", "ka", "o", "pri", "van", "zbog",
 }
 CONJUNCTIONS = {"i", "a", "pa", "da", "ali", "ili"}
 CYR_VOWELS = "аеиоуыэюяё"

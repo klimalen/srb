@@ -227,14 +227,19 @@ test("stored stats ignore garbage and keep a last id", () => {
 })
 
 test("the shipped dictionary is complete and addressable", () => {
-  assert.equal(dictionary.length, 778)
+  assert.equal(dictionary.length, 1057)
   const ids = new Set(dictionary.map((word) => word.id))
-  assert.equal(ids.size, 778)
+  assert.equal(ids.size, 1057)
   for (const word of dictionary) {
     assert.ok(word.serbian)
     assert.ok(word.transcription)
     assert.ok(word.russian)
   }
+  assert.ok(dictionary.some((word) => word.serbian === "prtljag"))
+  assert.ok(dictionary.some((word) => word.serbian === "Vratila sam se kasno kući."))
+  assert.ok(dictionary.some((word) => word.serbian === "Šta želite da poručite?"))
+  assert.ok(dictionary.some((word) => word.serbian === "Izvinite, naručili smo cezar picu, a ne margaritu."))
+  assert.ok(dictionary.some((word) => word.serbian === "Svaki dan se šetam po gradu."))
   const slobodno = dictionary.filter((word) => word.serbian === "slobodno")
   assert.equal(slobodno.length, 2)
   assert.notEqual(slobodno[0].russian, slobodno[1].russian)
