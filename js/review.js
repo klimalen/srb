@@ -22,6 +22,9 @@ export function weight(stat) {
 // предыдущие начинают получаться: незакреплённых держим около LESSON_AHEAD,
 // а не ждём, пока закроется вся пачка. Иначе знакомое слово возвращается
 // слишком поздно, а очередь к новым стоит на месте.
+// Освободившееся место занимают недавно добавленные слова (большая партия
+// word.added раньше), а не старый хвост словаря. Первые LESSON_SIZE слов
+// остаются началом колоды.
 export const LESSON_SIZE = 20
 export const LESSON_AHEAD = 14
 export const LESSON_CORRECT = 2
@@ -33,28 +36,50 @@ export function lessonReady(stat) {
   return correct >= LESSON_CORRECT && correct > wrong
 }
 
-export function unlockedCount(words, stats) {
-  const total = words.length
+function addedBatch(word) {
+  const batch = Number(word?.added)
+  if (!Number.isInteger(batch) || batch < 0) return 0
+  return batch
+}
+
+export function learningOrder(words) {
+  if (words.length <= LESSON_SIZE) return words.slice()
+  const head = words.slice(0, LESSON_SIZE)
+  const rest = words.slice(LESSON_SIZE).map((word, index) => ({ word, index }))
+  rest.sort((a, b) => {
+    const byBatch = addedBatch(b.word) - addedBatch(a.word)
+    if (byBatch !== 0) return byBatch
+    return a.index - b.index
+  })
+  return head.concat(rest.map((item) => item.word))
+}
+
+function openCount(order, stats) {
+  const total = order.length
   if (!total) return 0
   let open = Math.min(LESSON_SIZE, total)
   let settled = 0
   for (let i = 0; i < open; i += 1) {
-    if (lessonReady(stats?.[words[i].id])) settled += 1
+    if (lessonReady(stats?.[order[i].id])) settled += 1
   }
   while (open < total && settled + LESSON_AHEAD > open) {
-    if (lessonReady(stats?.[words[open].id])) settled += 1
+    if (lessonReady(stats?.[order[open].id])) settled += 1
     open += 1
   }
   return open
 }
 
+export function unlockedCount(words, stats) {
+  return openCount(learningOrder(words), stats)
+}
+
 export function learningDeck(words, stats) {
   if (!words.length) return []
-  const limit = unlockedCount(words, stats)
-  const deck = words.slice(0, limit)
+  const order = learningOrder(words)
+  const limit = openCount(order, stats)
+  const deck = order.slice(0, limit)
   const seen = new Set(deck.map((word) => word.id))
-  for (let i = limit; i < words.length; i += 1) {
-    const word = words[i]
+  for (const word of order) {
     if (seen.has(word.id)) continue
     if (readStat(stats?.[word.id]).wrong > 0) {
       deck.push(word)

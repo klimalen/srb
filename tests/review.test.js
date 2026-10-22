@@ -119,6 +119,32 @@ test("new words arrive as soon as earlier ones start sticking", () => {
   assert.equal(unlockedCount(words, stats), LESSON_SIZE + LESSON_AHEAD + 1)
 })
 
+test("recently added words are introduced before the older backlog", () => {
+  const older = lessonWords(LESSON_SIZE + 3)
+  const words = [
+    ...older,
+    { id: "batch-1a", added: 1 },
+    { id: "batch-1b", added: 1 },
+    { id: "batch-2", added: 2 },
+  ]
+  const head = older.slice(0, LESSON_SIZE).map((word) => word.id)
+  const need = LESSON_SIZE - LESSON_AHEAD + 1
+  const deck = learningDeck(words, mastered(head.slice(0, need)))
+  assert.equal(deck.length, LESSON_SIZE + 1)
+  assert.equal(deck[deck.length - 1].id, "batch-2")
+
+  const wide = learningDeck(words, mastered(head))
+  assert.deepEqual(
+    wide.slice(LESSON_SIZE).map((word) => word.id),
+    ["batch-2", "batch-1a", "batch-1b", "w20", "w21", "w22"],
+  )
+
+  const backlog = older[LESSON_SIZE].id
+  const missed = learningDeck(words, { [backlog]: { correct: 0, wrong: 1 } })
+  assert.equal(missed[missed.length - 1].id, backlog)
+  assert.equal(missed.some((word) => word.id === "batch-2"), false)
+})
+
 test("a missed word stays in the deck before its lesson is opened", () => {
   const words = lessonWords(LESSON_SIZE + 8)
   const late = words[words.length - 1].id
@@ -251,6 +277,15 @@ test("the shipped dictionary is complete and addressable", () => {
   assert.ok(dictionary.some((word) => word.serbian === "Šta želite da poručite?"))
   assert.ok(dictionary.some((word) => word.serbian === "Izvinite, naručili smo cezar picu, a ne margaritu."))
   assert.ok(dictionary.some((word) => word.serbian === "Svaki dan se šetam po gradu."))
+  const danas = dictionary.find((word) => word.serbian === "danas")
+  const putovanje = dictionary.find((word) => word.serbian === "putovanje")
+  assert.equal(danas.added, undefined)
+  assert.equal(putovanje.added, 1)
+  const settled = {}
+  for (const word of dictionary.slice(0, LESSON_SIZE)) {
+    settled[word.id] = { correct: LESSON_CORRECT, wrong: 0, shown: LESSON_CORRECT }
+  }
+  assert.equal(learningDeck(dictionary, settled)[LESSON_SIZE].serbian, "putovanje")
   const slobodno = dictionary.filter((word) => word.serbian === "slobodno")
   assert.equal(slobodno.length, 2)
   assert.notEqual(slobodno[0].russian, slobodno[1].russian)
