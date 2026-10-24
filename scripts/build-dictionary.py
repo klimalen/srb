@@ -64,7 +64,7 @@ CLITICS = {"sam", "si", "je", "smo", "ste", "su", "se", "li"}
 SHORT_DATIVE = {"mi", "mu", "joj", "im"}
 PREPOSITIONS = {
     "u", "na", "za", "sa", "s", "od", "do", "iz", "kod", "bez",
-    "pre", "posle", "po", "k", "ka", "o", "pri", "van",
+    "pre", "posle", "po", "k", "ka", "o", "pri", "van", "zbog",
 }
 CONJUNCTIONS = {"i", "a", "pa", "da", "ali", "ili"}
 CYR_VOWELS = "аеиоуыэюяё"
@@ -212,6 +212,16 @@ def mark_phrase(serbian: str, transcription: str, stress) -> str:
     return "".join(out)
 
 
+def added_batch(row: dict) -> int:
+    """Колонка «Добавлено»: чем больше номер партии, тем раньше она попадёт в колоду."""
+    raw = (row.get("Добавлено") or "").strip()
+    if raw == "":
+        return 0
+    if not raw.isdigit():
+        raise SystemExit(f"Партия «Добавлено» должна быть целым числом, получено {raw!r}")
+    return int(raw)
+
+
 def main() -> None:
     stress = {
         unicodedata.normalize("NFC", key): value
@@ -230,14 +240,16 @@ def main() -> None:
         n = seen.get(base, 0)
         seen[base] = n + 1
         entry_id = base if n == 0 else f"{base}-{n + 1}"
-        entries.append(
-            {
-                "id": entry_id,
-                "serbian": serbian,
-                "transcription": transcription,
-                "russian": russian,
-            }
-        )
+        entry = {
+            "id": entry_id,
+            "serbian": serbian,
+            "transcription": transcription,
+            "russian": russian,
+        }
+        added = added_batch(row)
+        if added:
+            entry["added"] = added
+        entries.append(entry)
 
     ids = [entry["id"] for entry in entries]
     if len(ids) != len(set(ids)):

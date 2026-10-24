@@ -16,10 +16,10 @@ import {
   pickDirection,
   pickWord,
   unlockedCount,
+  LESSON_AHEAD,
   LESSON_CORRECT,
   LESSON_SHOWN,
   LESSON_SIZE,
-  LESSON_STEP,
   readStat,
   weight,
 } from "../js/review.js"
@@ -86,26 +86,63 @@ function mastered(ids) {
   return stats
 }
 
-test("a fresh deck is the first lesson, then five more after it sticks", () => {
-  const words = lessonWords(LESSON_SIZE + LESSON_STEP + 3)
+test("new words arrive as soon as earlier ones start sticking", () => {
+  const words = lessonWords(LESSON_SIZE + LESSON_AHEAD + 3)
   assert.equal(unlockedCount(words, {}), LESSON_SIZE)
   assert.equal(learningDeck(words, {}).length, LESSON_SIZE)
 
   const first = words.slice(0, LESSON_SIZE).map((word) => word.id)
-  const stats = mastered(first)
-  stats[first[first.length - 1]] = { correct: LESSON_CORRECT - 1, wrong: 0 }
-  assert.equal(lessonReady(stats[first[first.length - 1]]), false)
+  const need = LESSON_SIZE - LESSON_AHEAD + 1
+  const stats = mastered(first.slice(0, need - 1))
+  assert.equal(lessonReady(stats[first[0]]), true)
   assert.equal(unlockedCount(words, stats), LESSON_SIZE)
 
-  stats[first[first.length - 1]] = { correct: 0, wrong: LESSON_SHOWN }
-  assert.equal(unlockedCount(words, stats), LESSON_SIZE + LESSON_STEP)
+  Object.assign(stats, mastered([first[need - 1]]))
+  assert.equal(unlockedCount(words, stats), LESSON_SIZE + 1)
 
-  const second = words.slice(LESSON_SIZE, LESSON_SIZE + LESSON_STEP).map((word) => word.id)
-  Object.assign(stats, mastered(second))
-  stats[second[second.length - 1]] = { correct: 1, wrong: 1 }
-  assert.equal(unlockedCount(words, stats), LESSON_SIZE + LESSON_STEP)
-  Object.assign(stats, mastered(second))
-  assert.equal(unlockedCount(words, stats), words.length)
+  stats[first[0]] = { correct: LESSON_CORRECT - 1, wrong: 0 }
+  assert.equal(lessonReady(stats[first[0]]), false)
+  assert.equal(unlockedCount(words, stats), LESSON_SIZE)
+
+  stats[first[0]] = { correct: LESSON_CORRECT, wrong: LESSON_CORRECT }
+  assert.equal(lessonReady(stats[first[0]]), false)
+  assert.equal(unlockedCount(words, stats), LESSON_SIZE)
+
+  stats[first[0]] = { correct: 0, wrong: LESSON_SHOWN }
+  assert.equal(lessonReady(stats[first[0]]), true)
+  assert.equal(unlockedCount(words, stats), LESSON_SIZE + 1)
+
+  Object.assign(stats, mastered(first))
+  assert.equal(unlockedCount(words, stats), LESSON_SIZE + LESSON_AHEAD)
+
+  stats[words[LESSON_SIZE].id] = { correct: LESSON_CORRECT, wrong: 0 }
+  assert.equal(unlockedCount(words, stats), LESSON_SIZE + LESSON_AHEAD + 1)
+})
+
+test("recently added words are introduced before the older backlog", () => {
+  const older = lessonWords(LESSON_SIZE + 3)
+  const words = [
+    ...older,
+    { id: "batch-1a", added: 1 },
+    { id: "batch-1b", added: 1 },
+    { id: "batch-2", added: 2 },
+  ]
+  const head = older.slice(0, LESSON_SIZE).map((word) => word.id)
+  const need = LESSON_SIZE - LESSON_AHEAD + 1
+  const deck = learningDeck(words, mastered(head.slice(0, need)))
+  assert.equal(deck.length, LESSON_SIZE + 1)
+  assert.equal(deck[deck.length - 1].id, "batch-2")
+
+  const wide = learningDeck(words, mastered(head))
+  assert.deepEqual(
+    wide.slice(LESSON_SIZE).map((word) => word.id),
+    ["batch-2", "batch-1a", "batch-1b", "w20", "w21", "w22"],
+  )
+
+  const backlog = older[LESSON_SIZE].id
+  const missed = learningDeck(words, { [backlog]: { correct: 0, wrong: 1 } })
+  assert.equal(missed[missed.length - 1].id, backlog)
+  assert.equal(missed.some((word) => word.id === "batch-2"), false)
 })
 
 test("a missed word stays in the deck before its lesson is opened", () => {
@@ -227,14 +264,28 @@ test("stored stats ignore garbage and keep a last id", () => {
 })
 
 test("the shipped dictionary is complete and addressable", () => {
-  assert.equal(dictionary.length, 778)
+  assert.equal(dictionary.length, 1057)
   const ids = new Set(dictionary.map((word) => word.id))
-  assert.equal(ids.size, 778)
+  assert.equal(ids.size, 1057)
   for (const word of dictionary) {
     assert.ok(word.serbian)
     assert.ok(word.transcription)
     assert.ok(word.russian)
   }
+  assert.ok(dictionary.some((word) => word.serbian === "prtljag"))
+  assert.ok(dictionary.some((word) => word.serbian === "Vratila sam se kasno kući."))
+  assert.ok(dictionary.some((word) => word.serbian === "Šta želite da poručite?"))
+  assert.ok(dictionary.some((word) => word.serbian === "Izvinite, naručili smo cezar picu, a ne margaritu."))
+  assert.ok(dictionary.some((word) => word.serbian === "Svaki dan se šetam po gradu."))
+  const danas = dictionary.find((word) => word.serbian === "danas")
+  const putovanje = dictionary.find((word) => word.serbian === "putovanje")
+  assert.equal(danas.added, undefined)
+  assert.equal(putovanje.added, 1)
+  const settled = {}
+  for (const word of dictionary.slice(0, LESSON_SIZE)) {
+    settled[word.id] = { correct: LESSON_CORRECT, wrong: 0, shown: LESSON_CORRECT }
+  }
+  assert.equal(learningDeck(dictionary, settled)[LESSON_SIZE].serbian, "putovanje")
   const slobodno = dictionary.filter((word) => word.serbian === "slobodno")
   assert.equal(slobodno.length, 2)
   assert.notEqual(slobodno[0].russian, slobodno[1].russian)
