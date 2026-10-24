@@ -60,13 +60,13 @@ SINGLE = {
     "ž": "ж",
 }
 
-CLITICS = {"sam", "si", "je", "smo", "ste", "su", "se", "li"}
+CLITICS = {"sam", "si", "je", "smo", "ste", "su", "se", "li", "me", "te", "ga", "ju", "ih", "nam"}
 SHORT_DATIVE = {"mi", "mu", "joj", "im"}
 PREPOSITIONS = {
     "u", "na", "za", "sa", "s", "od", "do", "iz", "kod", "bez",
     "pre", "posle", "po", "k", "ka", "o", "pri", "van", "zbog",
 }
-CONJUNCTIONS = {"i", "a", "pa", "da", "ali", "ili"}
+CONJUNCTIONS = {"i", "a", "pa", "da", "ali", "ili", "ni"}
 CYR_VOWELS = "аеиоуыэюяё"
 
 LATIN_RE = re.compile(r"[A-Za-zČĆĐŠŽčćđšž]+|[^A-Za-zČĆĐŠŽčćđšž]+")
