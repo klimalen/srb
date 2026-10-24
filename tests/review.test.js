@@ -264,9 +264,9 @@ test("stored stats ignore garbage and keep a last id", () => {
 })
 
 test("the shipped dictionary is complete and addressable", () => {
-  assert.equal(dictionary.length, 1057)
+  assert.equal(dictionary.length, 1114)
   const ids = new Set(dictionary.map((word) => word.id))
-  assert.equal(ids.size, 1057)
+  assert.equal(ids.size, 1114)
   for (const word of dictionary) {
     assert.ok(word.serbian)
     assert.ok(word.transcription)
@@ -281,11 +281,17 @@ test("the shipped dictionary is complete and addressable", () => {
   const putovanje = dictionary.find((word) => word.serbian === "putovanje")
   assert.equal(danas.added, undefined)
   assert.equal(putovanje.added, 1)
+  const volimTe = dictionary.find((word) => word.serbian === "Volim te.")
+  const called = dictionary.find((word) => word.serbian === "Čekala ju je kod pozorišta.")
+  assert.equal(volimTe.added, 2)
+  assert.equal(volimTe.transcription, "вОлим те.")
+  assert.equal(volimTe.russian, "Я люблю тебя.")
+  assert.equal(called.transcription, "чЕкала ю е код пОзоришта.")
   const settled = {}
   for (const word of dictionary.slice(0, LESSON_SIZE)) {
     settled[word.id] = { correct: LESSON_CORRECT, wrong: 0, shown: LESSON_CORRECT }
   }
-  assert.equal(learningDeck(dictionary, settled)[LESSON_SIZE].serbian, "putovanje")
+  assert.equal(learningDeck(dictionary, settled)[LESSON_SIZE].serbian, "Volim te.")
   const slobodno = dictionary.filter((word) => word.serbian === "slobodno")
   assert.equal(slobodno.length, 2)
   assert.notEqual(slobodno[0].russian, slobodno[1].russian)

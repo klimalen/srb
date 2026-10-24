@@ -6619,5 +6619,404 @@ export const dictionary = [
     "transcription": "чОвек",
     "russian": "человек",
     "added": 1
+  },
+  {
+    "id": "we64a0cb0",
+    "serbian": "Volim te.",
+    "transcription": "вОлим те.",
+    "russian": "Я люблю тебя.",
+    "added": 2
+  },
+  {
+    "id": "w36303ce3",
+    "serbian": "Volim je.",
+    "transcription": "вОлим е.",
+    "russian": "Я люблю её.",
+    "added": 2
+  },
+  {
+    "id": "wfbc0aeec",
+    "serbian": "Volim ga.",
+    "transcription": "вОлим га.",
+    "russian": "Я люблю его.",
+    "added": 2
+  },
+  {
+    "id": "wc2e65404",
+    "serbian": "Volim ih.",
+    "transcription": "вОлим их.",
+    "russian": "Я люблю их.",
+    "added": 2
+  },
+  {
+    "id": "wcdb4b8f7",
+    "serbian": "Tebe volim, a nju ne.",
+    "transcription": "тЕбе вОлим, а ньУ нЕ.",
+    "russian": "Тебя люблю, а её нет.",
+    "added": 2
+  },
+  {
+    "id": "w00bc69bb",
+    "serbian": "Meni se sviđa.",
+    "transcription": "мЕни се свИджа.",
+    "russian": "Мне нравится.",
+    "added": 2
+  },
+  {
+    "id": "w230ce01d",
+    "serbian": "Tebi se sviđa.",
+    "transcription": "тЕби се свИджа.",
+    "russian": "Тебе нравится.",
+    "added": 2
+  },
+  {
+    "id": "w6512b97b",
+    "serbian": "Njemu se sviđa.",
+    "transcription": "ньЕму се свИджа.",
+    "russian": "Ему нравится.",
+    "added": 2
+  },
+  {
+    "id": "w979375c5",
+    "serbian": "Njoj se sviđa.",
+    "transcription": "ньОй се свИджа.",
+    "russian": "Ей нравится.",
+    "added": 2
+  },
+  {
+    "id": "w4911883a",
+    "serbian": "Nama se sviđa.",
+    "transcription": "нАма се свИджа.",
+    "russian": "Нам нравится.",
+    "added": 2
+  },
+  {
+    "id": "w47c443a7",
+    "serbian": "Vama se sviđa.",
+    "transcription": "вАма се свИджа.",
+    "russian": "Вам нравится.",
+    "added": 2
+  },
+  {
+    "id": "wf29c2689",
+    "serbian": "Njima se sviđa.",
+    "transcription": "ньИма се свИджа.",
+    "russian": "Им нравится.",
+    "added": 2
+  },
+  {
+    "id": "w6cc30eee",
+    "serbian": "Sviđa li ti se ovde?",
+    "transcription": "свИджа ли тИ се Овде?",
+    "russian": "Тебе здесь нравится?",
+    "added": 2
+  },
+  {
+    "id": "w69d5fbeb",
+    "serbian": "Je li ti se svidelo u restoranu?",
+    "transcription": "е ли тИ се свИдело у рестОрану?",
+    "russian": "Тебе понравилось в ресторане?",
+    "added": 2
+  },
+  {
+    "id": "w47e907e4",
+    "serbian": "Je li se tebi svidelo?",
+    "transcription": "е ли се тЕби свИдело?",
+    "russian": "Тебе понравилось?",
+    "added": 2
+  },
+  {
+    "id": "wf519fe1f",
+    "serbian": "Sviđa nam se.",
+    "transcription": "свИджа нам се.",
+    "russian": "Нам нравится.",
+    "added": 2
+  },
+  {
+    "id": "w23a15642",
+    "serbian": "Sviđa vam se.",
+    "transcription": "свИджа вам се.",
+    "russian": "Вам нравится.",
+    "added": 2
+  },
+  {
+    "id": "wa63bff2e",
+    "serbian": "Sviđa im se.",
+    "transcription": "свИджа им се.",
+    "russian": "Им нравится.",
+    "added": 2
+  },
+  {
+    "id": "w8a832cb7",
+    "serbian": "Ona me je pozvala na rođendan.",
+    "transcription": "Она ме е пОзвала на рОджендан.",
+    "russian": "Она пригласила меня на день рождения.",
+    "added": 2
+  },
+  {
+    "id": "w2a7d8706",
+    "serbian": "Volim i tebe i njega.",
+    "transcription": "вОлим и тЕбе и ньЕга.",
+    "russian": "Я люблю и тебя, и его.",
+    "added": 2
+  },
+  {
+    "id": "w9664aa5d",
+    "serbian": "Nju niko ne voli.",
+    "transcription": "ньУ нИко нЕ воли.",
+    "russian": "Её никто не любит.",
+    "added": 2
+  },
+  {
+    "id": "w72e19c60",
+    "serbian": "Da li si je video danas?",
+    "transcription": "да ли си е вИдео дАнас?",
+    "russian": "Ты её сегодня видел?",
+    "added": 2
+  },
+  {
+    "id": "w5f14db47",
+    "serbian": "Da li je ova kafa za tebe ili za mene?",
+    "transcription": "да ли е Ова кАфа за тЕбе или за мЕне?",
+    "russian": "Этот кофе для тебя или для меня?",
+    "added": 2
+  },
+  {
+    "id": "wc43117b8",
+    "serbian": "Vas niko ne razume.",
+    "transcription": "вАс нИко нЕ разУме.",
+    "russian": "Вас никто не понимает.",
+    "added": 2
+  },
+  {
+    "id": "we27e759d",
+    "serbian": "Oni nas nisu pozvali na svadbu.",
+    "transcription": "Они нАс нИсу пОзвали на свАдбу.",
+    "russian": "Они не пригласили нас на свадьбу.",
+    "added": 2
+  },
+  {
+    "id": "w73b9ea19",
+    "serbian": "Hoću njega da vidim, a ne tebe.",
+    "transcription": "хОчу ньЕга да вИдим, а нЕ тебе.",
+    "russian": "Я хочу видеть его, а не тебя.",
+    "added": 2
+  },
+  {
+    "id": "w64005ef5",
+    "serbian": "Niko ga nije tražio juče.",
+    "transcription": "нИко га нИе трАжио Юче.",
+    "russian": "Никто его вчера не искал.",
+    "added": 2
+  },
+  {
+    "id": "w5649b84a",
+    "serbian": "Njih sam upoznao na koncertu.",
+    "transcription": "ньИх сам упознАо на кОнцерту.",
+    "russian": "Я познакомился с ними на концерте.",
+    "added": 2
+  },
+  {
+    "id": "wd458d4ab",
+    "serbian": "Ne volim ni tebe, ni nju.",
+    "transcription": "нЕ волим ни тЕбе, ни ньУ.",
+    "russian": "Я не люблю ни тебя, ни её.",
+    "added": 2
+  },
+  {
+    "id": "w039c50ea",
+    "serbian": "Čekala ju je kod pozorišta.",
+    "transcription": "чЕкала ю е код пОзоришта.",
+    "russian": "Она ждала её у театра.",
+    "added": 2
+  },
+  {
+    "id": "wad708e45",
+    "serbian": "On ju je pozvao na večeru.",
+    "transcription": "Он ю е пОзвао на вЕчеру.",
+    "russian": "Он пригласил её на ужин.",
+    "added": 2
+  },
+  {
+    "id": "wf96e9ca5",
+    "serbian": "Oni su je pozvali na večeru.",
+    "transcription": "Они су е пОзвали на вЕчеру.",
+    "russian": "Они пригласили её на ужин.",
+    "added": 2
+  },
+  {
+    "id": "wd11fbf65",
+    "serbian": "Ovo mi je sin.",
+    "transcription": "Ово ми е сИн.",
+    "russian": "Это мой сын.",
+    "added": 2
+  },
+  {
+    "id": "w15c0ee6d",
+    "serbian": "Išla sam u tržni centar juče.",
+    "transcription": "Ишла сам у тРжни цЕнтар Юче.",
+    "russian": "Я вчера ходила в торговый центр.",
+    "added": 2
+  },
+  {
+    "id": "w3388d9df",
+    "serbian": "Kupila sam mnogo stvari.",
+    "transcription": "кУпила сам мнОго ствАри.",
+    "russian": "Я купила много вещей.",
+    "added": 2
+  },
+  {
+    "id": "w4a2d81e6",
+    "serbian": "Žurila sam i nisam stigla da kupim sve što sam htela.",
+    "transcription": "жУрила сам и нИсам стИгла да кУпим свЕ штО сам хтЕла.",
+    "russian": "Я торопилась и не успела купить всё, что хотела.",
+    "added": 2
+  },
+  {
+    "id": "wd0aad71c",
+    "serbian": "Kasnije sam sela u jedan kafić.",
+    "transcription": "кАсние сам сЕла у Едан кАфич.",
+    "russian": "Позже я села в одно кафе.",
+    "added": 2
+  },
+  {
+    "id": "w01560b79",
+    "serbian": "Naručila sam kafu.",
+    "transcription": "нарУчила сам кАфу.",
+    "russian": "Я заказала кофе.",
+    "added": 2
+  },
+  {
+    "id": "w58ffeca0",
+    "serbian": "Kafa mi se nije svidela.",
+    "transcription": "кАфа ми се нИе свИдела.",
+    "russian": "Кофе мне не понравился.",
+    "added": 2
+  },
+  {
+    "id": "w0e45a7a9",
+    "serbian": "Ne sviđa mi se.",
+    "transcription": "нЕ свиджа ми се.",
+    "russian": "Мне не нравится.",
+    "added": 2
+  },
+  {
+    "id": "wd130a181",
+    "serbian": "Nije mi se sviđalo.",
+    "transcription": "нИе ми се свИджало.",
+    "russian": "Мне не нравилось.",
+    "added": 2
+  },
+  {
+    "id": "wea8f7317",
+    "serbian": "Nisam išla.",
+    "transcription": "нИсам Ишла.",
+    "russian": "Я не ходила.",
+    "added": 2
+  },
+  {
+    "id": "wfa70d00e",
+    "serbian": "Nisam pila.",
+    "transcription": "нИсам пИла.",
+    "russian": "Я не пила.",
+    "added": 2
+  },
+  {
+    "id": "w026810dc",
+    "serbian": "Ne pušim.",
+    "transcription": "нЕ пушим.",
+    "russian": "Я не курю.",
+    "added": 2
+  },
+  {
+    "id": "we0f28944",
+    "serbian": "Nisam pušila.",
+    "transcription": "нИсам пУшила.",
+    "russian": "Я не курила.",
+    "added": 2
+  },
+  {
+    "id": "wd9a72bb1",
+    "serbian": "Nisam radila.",
+    "transcription": "нИсам рАдила.",
+    "russian": "Я не работала.",
+    "added": 2
+  },
+  {
+    "id": "w74be1316",
+    "serbian": "Jeste li nekog upoznali u Beogradu?",
+    "transcription": "Есте ли нЕког упознАли у беОграду?",
+    "russian": "Вы с кем-нибудь познакомились в Белграде?",
+    "added": 2
+  },
+  {
+    "id": "wa7ea6db5",
+    "serbian": "Upoznala sam Anu.",
+    "transcription": "упознАла сам Ану.",
+    "russian": "Я познакомилась с Аной.",
+    "added": 2
+  },
+  {
+    "id": "w7ffdbe27",
+    "serbian": "Pozvala sam je u goste.",
+    "transcription": "пОзвала сам е у гОсте.",
+    "russian": "Я пригласила её в гости.",
+    "added": 2
+  },
+  {
+    "id": "w0e3ee542",
+    "serbian": "Zvala sam koleginicu, ali mi se nije javila.",
+    "transcription": "звАла сам колегИницу, али ми се нИе Явила.",
+    "russian": "Я звонила коллеге, но она мне не ответила.",
+    "added": 2
+  },
+  {
+    "id": "w81622e1c",
+    "serbian": "sesti",
+    "transcription": "сЕсти",
+    "russian": "сесть",
+    "added": 2
+  },
+  {
+    "id": "w14163196",
+    "serbian": "pušiti",
+    "transcription": "пУшити",
+    "russian": "курить",
+    "added": 2
+  },
+  {
+    "id": "w529ac000",
+    "serbian": "pozvati",
+    "transcription": "пОзвати",
+    "russian": "пригласить",
+    "added": 2
+  },
+  {
+    "id": "w0284f563",
+    "serbian": "zvati",
+    "transcription": "звАти",
+    "russian": "звонить",
+    "added": 2
+  },
+  {
+    "id": "w2127686c",
+    "serbian": "upoznati",
+    "transcription": "упознАти",
+    "russian": "познакомиться",
+    "added": 2
+  },
+  {
+    "id": "w9cd00557",
+    "serbian": "javiti se",
+    "transcription": "Явити се",
+    "russian": "связаться / перезвонить",
+    "added": 2
+  },
+  {
+    "id": "wce254dc7",
+    "serbian": "svideti se",
+    "transcription": "свИдети се",
+    "russian": "понравиться",
+    "added": 2
   }
 ]
