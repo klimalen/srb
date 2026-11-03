@@ -7018,5 +7018,866 @@ export const dictionary = [
     "transcription": "свИдети се",
     "russian": "понравиться",
     "added": 2
+  },
+  {
+    "id": "w2c5ab0a3",
+    "serbian": "stizati",
+    "transcription": "стИзати",
+    "russian": "успевать / прибывать",
+    "added": 3
+  },
+  {
+    "id": "w68b94550",
+    "serbian": "stižem",
+    "transcription": "стИжем",
+    "russian": "я успеваю / прибываю",
+    "added": 3
+  },
+  {
+    "id": "w46e41a8e",
+    "serbian": "stiže",
+    "transcription": "стИже",
+    "russian": "успевает / прибывает",
+    "added": 3
+  },
+  {
+    "id": "w6f6ddf22",
+    "serbian": "Stižem za pet minuta.",
+    "transcription": "стИжем за пЕт мИнута.",
+    "russian": "Буду через пять минут.",
+    "added": 3
+  },
+  {
+    "id": "w7cee126e",
+    "serbian": "minut",
+    "transcription": "мИнут",
+    "russian": "минута",
+    "added": 3
+  },
+  {
+    "id": "w7fea9e54",
+    "serbian": "taksi",
+    "transcription": "тАкси",
+    "russian": "такси",
+    "added": 3
+  },
+  {
+    "id": "w11b98a74",
+    "serbian": "Taksi stiže za dva minuta.",
+    "transcription": "тАкси стИже за двА мИнута.",
+    "russian": "Такси приедет через две минуты.",
+    "added": 3
+  },
+  {
+    "id": "wef6f344a",
+    "serbian": "Ne stižem ništa da završim zbog posla.",
+    "transcription": "нЕ стижем нИшта да завРшим због пОсла.",
+    "russian": "Я ничего не успеваю закончить из-за работы.",
+    "added": 3
+  },
+  {
+    "id": "wc95fc5a8",
+    "serbian": "Jeste li kod kuće?",
+    "transcription": "Есте ли код кУче?",
+    "russian": "Вы дома?",
+    "added": 3
+  },
+  {
+    "id": "w2412d30e",
+    "serbian": "kurir",
+    "transcription": "кУрир",
+    "russian": "курьер",
+    "added": 3
+  },
+  {
+    "id": "w53adc118",
+    "serbian": "vrata",
+    "transcription": "врАта",
+    "russian": "дверь",
+    "added": 3
+  },
+  {
+    "id": "w1e0f263d",
+    "serbian": "Izvinite, kurir je stigao, moram da otvorim vrata.",
+    "transcription": "извИните, кУрир е стИгао, мОрам да отвОрим врАта.",
+    "russian": "Извините, курьер приехал, мне нужно открыть дверь.",
+    "added": 3
+  },
+  {
+    "id": "wf007f320",
+    "serbian": "popiti",
+    "transcription": "пОпити",
+    "russian": "выпить",
+    "added": 3
+  },
+  {
+    "id": "w90027c4c",
+    "serbian": "popijem",
+    "transcription": "пОпием",
+    "russian": "я выпью",
+    "added": 3
+  },
+  {
+    "id": "w87db8c9e",
+    "serbian": "Nisam stigla da popijem kafu.",
+    "transcription": "нИсам стИгла да пОпием кАфу.",
+    "russian": "Я не успела выпить кофе.",
+    "added": 3
+  },
+  {
+    "id": "w1be2a8ea",
+    "serbian": "banka",
+    "transcription": "бАнка",
+    "russian": "банк",
+    "added": 3
+  },
+  {
+    "id": "wd4c5ab84",
+    "serbian": "Nisam stigla da otvorim račun u banci, moram sutra da idem.",
+    "transcription": "нИсам стИгла да отвОрим рАчун у бАнци, мОрам сУтра да Идем.",
+    "russian": "Я не успела открыть счёт в банке, завтра придётся идти.",
+    "added": 3
+  },
+  {
+    "id": "w0cdebba9",
+    "serbian": "proveravati",
+    "transcription": "проверАвати",
+    "russian": "проверять",
+    "added": 3
+  },
+  {
+    "id": "w26ab9c46",
+    "serbian": "proveravam",
+    "transcription": "проверАвам",
+    "russian": "я проверяю",
+    "added": 3
+  },
+  {
+    "id": "w5b9b8bcb",
+    "serbian": "mejl",
+    "transcription": "мЕйл",
+    "russian": "почта",
+    "added": 3
+  },
+  {
+    "id": "w888f32f6",
+    "serbian": "Proveravam mejl svakog dana.",
+    "transcription": "проверАвам мЕйл свАког дАна.",
+    "russian": "Я каждый день проверяю почту.",
+    "added": 3
+  },
+  {
+    "id": "w18266cb0",
+    "serbian": "odgovarati",
+    "transcription": "одговАрати",
+    "russian": "отвечать / подходить",
+    "added": 3
+  },
+  {
+    "id": "wae3d125c",
+    "serbian": "odgovara",
+    "transcription": "одговАра",
+    "russian": "отвечает / подходит",
+    "added": 3
+  },
+  {
+    "id": "wa560e683",
+    "serbian": "poruka",
+    "transcription": "пОрука",
+    "russian": "сообщение",
+    "added": 3
+  },
+  {
+    "id": "w36c014ab",
+    "serbian": "Poslala sam Ani juče poruku, ali mi ne odgovara.",
+    "transcription": "пОслала сам Ани Юче пОруку, али ми нЕ одговАра.",
+    "russian": "Я вчера отправила Ане сообщение, но она мне не отвечает.",
+    "added": 3
+  },
+  {
+    "id": "w9f4d6eea",
+    "serbian": "zakazati",
+    "transcription": "закАзати",
+    "russian": "назначить",
+    "added": 3
+  },
+  {
+    "id": "w2dd97288",
+    "serbian": "Odgovara li vam da zakažemo čas sutra u tri?",
+    "transcription": "одговАра ли вам да закАжемо чАс сУтра у трИ?",
+    "russian": "Вам подходит назначить занятие завтра на три?",
+    "added": 3
+  },
+  {
+    "id": "w3d5ec526",
+    "serbian": "klima",
+    "transcription": "клИма",
+    "russian": "климат",
+    "added": 3
+  },
+  {
+    "id": "w8c03b31b",
+    "serbian": "Ne odgovara mi moskovska klima.",
+    "transcription": "нЕ одговАра ми мОсковска клИма.",
+    "russian": "Московский климат мне не подходит.",
+    "added": 3
+  },
+  {
+    "id": "wb2de90a2",
+    "serbian": "dogovarati se",
+    "transcription": "договАрати се",
+    "russian": "договариваться",
+    "added": 3
+  },
+  {
+    "id": "w5753f0ef",
+    "serbian": "Dogovaramo se za čas kasnije.",
+    "transcription": "договАрамо се за чАс кАсние.",
+    "russian": "Мы договариваемся о занятии попозже.",
+    "added": 3
+  },
+  {
+    "id": "wd24658e5",
+    "serbian": "obaveza",
+    "transcription": "Обавеза",
+    "russian": "обязанность",
+    "added": 3
+  },
+  {
+    "id": "w3338b9a5",
+    "serbian": "obaveze",
+    "transcription": "Обавезе",
+    "russian": "обязанности",
+    "added": 3
+  },
+  {
+    "id": "wb4b0ccba",
+    "serbian": "Imam mnogo obaveza da završim danas.",
+    "transcription": "Имам мнОго Обавеза да завРшим дАнас.",
+    "russian": "У меня много дел, которые нужно закончить сегодня.",
+    "added": 3
+  },
+  {
+    "id": "w87dcb270",
+    "serbian": "dogovor",
+    "transcription": "дОговор",
+    "russian": "договорённость",
+    "added": 3
+  },
+  {
+    "id": "w9b213a9a",
+    "serbian": "ugovor",
+    "transcription": "Уговор",
+    "russian": "договор",
+    "added": 3
+  },
+  {
+    "id": "w25b47384",
+    "serbian": "dogovoriti se",
+    "transcription": "договОрити се",
+    "russian": "договориться",
+    "added": 3
+  },
+  {
+    "id": "wc5da0056",
+    "serbian": "Dogovorili smo se.",
+    "transcription": "договОрили смо се.",
+    "russian": "Мы договорились.",
+    "added": 3
+  },
+  {
+    "id": "w155774bb",
+    "serbian": "kirija",
+    "transcription": "кИрия",
+    "russian": "аренда",
+    "added": 3
+  },
+  {
+    "id": "w1d9969ab",
+    "serbian": "plaćati",
+    "transcription": "плАчати",
+    "russian": "платить",
+    "added": 3
+  },
+  {
+    "id": "w0d667b1b",
+    "serbian": "Plaćate kiriju prvog u mesecu.",
+    "transcription": "плАчате кИрию пРвог у мЕсецу.",
+    "russian": "Вы платите аренду первого числа.",
+    "added": 3
+  },
+  {
+    "id": "wc4587fd0",
+    "serbian": "U redu, dogovoreno.",
+    "transcription": "у рЕду, договОрено.",
+    "russian": "Хорошо, договорились.",
+    "added": 3
+  },
+  {
+    "id": "w7b441398",
+    "serbian": "sastajati se",
+    "transcription": "сАстаяти се",
+    "russian": "встречаться",
+    "added": 3
+  },
+  {
+    "id": "wf5ed5e3f",
+    "serbian": "Čekam sastanak.",
+    "transcription": "чЕкам сАстанак.",
+    "russian": "Я жду встречу.",
+    "added": 3
+  },
+  {
+    "id": "wdb1d2866",
+    "serbian": "uopšte",
+    "transcription": "Уопште",
+    "russian": "вообще / совсем",
+    "added": 3
+  },
+  {
+    "id": "w4de759f9",
+    "serbian": "Ponekad imam mnogo sastanaka, a ponekad nemam uopšte.",
+    "transcription": "пОнекад Имам мнОго сАстанака, а пОнекад нЕмам Уопште.",
+    "russian": "Иногда у меня много встреч, а иногда нет вообще.",
+    "added": 3
+  },
+  {
+    "id": "w469bd0df",
+    "serbian": "različito",
+    "transcription": "рАзличито",
+    "russian": "разное / по-разному",
+    "added": 3
+  },
+  {
+    "id": "w39d0f352",
+    "serbian": "U različito vreme uvek imamo sastanke.",
+    "transcription": "у рАзличито врЕме Увек Имамо сАстанке.",
+    "russian": "В разное время у нас всегда бывают встречи.",
+    "added": 3
+  },
+  {
+    "id": "wa2215175",
+    "serbian": "razlika",
+    "transcription": "рАзлика",
+    "russian": "разница",
+    "added": 3
+  },
+  {
+    "id": "w3bb357fd",
+    "serbian": "Razlika je dva sata sa Moskvom.",
+    "transcription": "рАзлика е двА сАта са мОсквом.",
+    "russian": "Разница с Москвой — два часа.",
+    "added": 3
+  },
+  {
+    "id": "wd767dfad",
+    "serbian": "odlaziti",
+    "transcription": "Одлазити",
+    "russian": "уходить / уезжать",
+    "added": 3
+  },
+  {
+    "id": "w57cd3011",
+    "serbian": "Ovo nam ne odgovara, zato što ceo dan odlazi na posao.",
+    "transcription": "Ово нам нЕ одговАра, зАто штО цЕо дАн Одлази на пОсао.",
+    "russian": "Нам это не подходит, потому что весь день уходит на работу.",
+    "added": 3
+  },
+  {
+    "id": "w15d294e8",
+    "serbian": "organizovati",
+    "transcription": "оргАнизовати",
+    "russian": "организовывать",
+    "added": 3
+  },
+  {
+    "id": "w7b56548f",
+    "serbian": "organizujem",
+    "transcription": "оргАнизуем",
+    "russian": "я организую",
+    "added": 3
+  },
+  {
+    "id": "wdb36ae95",
+    "serbian": "pripremati",
+    "transcription": "припрЕмати",
+    "russian": "готовить",
+    "added": 3
+  },
+  {
+    "id": "w9ce87407",
+    "serbian": "pripremam",
+    "transcription": "припрЕмам",
+    "russian": "я готовлю",
+    "added": 3
+  },
+  {
+    "id": "we7b1d5d9",
+    "serbian": "Pripremam se za sastanak.",
+    "transcription": "припрЕмам се за сАстанак.",
+    "russian": "Я готовлюсь к встрече.",
+    "added": 3
+  },
+  {
+    "id": "wcd3fe533",
+    "serbian": "klijent",
+    "transcription": "клИент",
+    "russian": "клиент",
+    "added": 3
+  },
+  {
+    "id": "wbd0cfa1f",
+    "serbian": "Šaljem poruke klijentima ceo dan.",
+    "transcription": "шАльем пОруке клИентима цЕо дАн.",
+    "russian": "Я весь день отправляю клиентам сообщения.",
+    "added": 3
+  },
+  {
+    "id": "wf7d6f723",
+    "serbian": "Poslala sam Ani poruku.",
+    "transcription": "пОслала сам Ани пОруку.",
+    "russian": "Я отправила Ане сообщение.",
+    "added": 3
+  },
+  {
+    "id": "wa3fe0ac3",
+    "serbian": "postavljati",
+    "transcription": "пОставльати",
+    "russian": "задавать",
+    "added": 3
+  },
+  {
+    "id": "wd9d7e8fc",
+    "serbian": "postavljam",
+    "transcription": "пОставльам",
+    "russian": "я задаю",
+    "added": 3
+  },
+  {
+    "id": "wc5487944",
+    "serbian": "pitanje",
+    "transcription": "пИтанье",
+    "russian": "вопрос",
+    "added": 3
+  },
+  {
+    "id": "w958f5416",
+    "serbian": "Postavljam pitanja.",
+    "transcription": "пОставльам пИтаньа.",
+    "russian": "Я задаю вопросы.",
+    "added": 3
+  },
+  {
+    "id": "w86a8fc89",
+    "serbian": "objašnjenje",
+    "transcription": "обяшньЕнье",
+    "russian": "объяснение",
+    "added": 3
+  },
+  {
+    "id": "wecda2526",
+    "serbian": "Tražila sam objašnjenje.",
+    "transcription": "трАжила сам обяшньЕнье.",
+    "russian": "Я искала объяснение.",
+    "added": 3
+  },
+  {
+    "id": "wbaead6df",
+    "serbian": "Tražim posao.",
+    "transcription": "трАжим пОсао.",
+    "russian": "Я ищу работу.",
+    "added": 3
+  },
+  {
+    "id": "wff6507b8",
+    "serbian": "pokušavati",
+    "transcription": "покушАвати",
+    "russian": "пытаться",
+    "added": 3
+  },
+  {
+    "id": "w8e2a26fe",
+    "serbian": "pokušavam",
+    "transcription": "покушАвам",
+    "russian": "я пытаюсь",
+    "added": 3
+  },
+  {
+    "id": "w36c9e475",
+    "serbian": "pokušaj",
+    "transcription": "пОкушай",
+    "russian": "попытка / попробуй",
+    "added": 3
+  },
+  {
+    "id": "wb22228f0",
+    "serbian": "rešiti",
+    "transcription": "рЕшити",
+    "russian": "решить",
+    "added": 3
+  },
+  {
+    "id": "w758520af",
+    "serbian": "rešenje",
+    "transcription": "решЕнье",
+    "russian": "решение",
+    "added": 3
+  },
+  {
+    "id": "wceca9d60",
+    "serbian": "problem",
+    "transcription": "прОблем",
+    "russian": "проблема",
+    "added": 3
+  },
+  {
+    "id": "wd713ceab",
+    "serbian": "Pokušavam da rešim problem na poslu.",
+    "transcription": "покушАвам да рЕшим прОблем на пОслу.",
+    "russian": "Я пытаюсь решить проблему на работе.",
+    "added": 3
+  },
+  {
+    "id": "wcd1d709a",
+    "serbian": "pokušati",
+    "transcription": "пОкушати",
+    "russian": "попытаться",
+    "added": 3
+  },
+  {
+    "id": "we626c47b",
+    "serbian": "uspeti",
+    "transcription": "Успети",
+    "russian": "получиться",
+    "added": 3
+  },
+  {
+    "id": "w4bab4cc1",
+    "serbian": "Pokušala sam, ali nisam uspela.",
+    "transcription": "пОкушала сам, али нИсам Успела.",
+    "russian": "Я попыталась, но у меня не получилось.",
+    "added": 3
+  },
+  {
+    "id": "w5ee316d5",
+    "serbian": "pronaći",
+    "transcription": "прОначи",
+    "russian": "найти",
+    "added": 3
+  },
+  {
+    "id": "wc0df4858",
+    "serbian": "pronađem",
+    "transcription": "прОнаджем",
+    "russian": "я найду",
+    "added": 3
+  },
+  {
+    "id": "w14fbf9c5",
+    "serbian": "pronašla",
+    "transcription": "прОнашла",
+    "russian": "нашла",
+    "added": 3
+  },
+  {
+    "id": "w148b9184",
+    "serbian": "praviti",
+    "transcription": "прАвити",
+    "russian": "делать",
+    "added": 3
+  },
+  {
+    "id": "w00a62713",
+    "serbian": "greška",
+    "transcription": "грЕшка",
+    "russian": "ошибка",
+    "added": 3
+  },
+  {
+    "id": "wdf972313",
+    "serbian": "Pravim greške.",
+    "transcription": "прАвим грЕшке.",
+    "russian": "Я делаю ошибки.",
+    "added": 3
+  },
+  {
+    "id": "w13f4f0ea",
+    "serbian": "informacija",
+    "transcription": "информАция",
+    "russian": "информация",
+    "added": 3
+  },
+  {
+    "id": "w66de237f",
+    "serbian": "dokument",
+    "transcription": "докУмент",
+    "russian": "документ",
+    "added": 3
+  },
+  {
+    "id": "we7900b82",
+    "serbian": "Ima sve informacije o dokumentima.",
+    "transcription": "Има свЕ информАцие о докУментима.",
+    "russian": "У неё есть вся информация о документах.",
+    "added": 3
+  },
+  {
+    "id": "wf8fc5076",
+    "serbian": "naručivati",
+    "transcription": "наручИвати",
+    "russian": "заказывать",
+    "added": 3
+  },
+  {
+    "id": "w185dcc0f",
+    "serbian": "naručujem",
+    "transcription": "нарУчуем",
+    "russian": "я заказываю",
+    "added": 3
+  },
+  {
+    "id": "wdf7ac8de",
+    "serbian": "Naručujem stvari za kuću iz Ikee.",
+    "transcription": "нарУчуем ствАри за кУчу из икЕе.",
+    "russian": "Я заказываю для дома вещи из Икеи.",
+    "added": 3
+  },
+  {
+    "id": "w95eb7f82",
+    "serbian": "Naruči mi kafu.",
+    "transcription": "нарУчи ми кАфу.",
+    "russian": "Закажи мне кофе.",
+    "added": 3
+  },
+  {
+    "id": "w575ac881",
+    "serbian": "Šta želite da naručite?",
+    "transcription": "штА жЕлите да нарУчите?",
+    "russian": "Что вы хотите заказать?",
+    "added": 3
+  },
+  {
+    "id": "wd97ffec1",
+    "serbian": "late",
+    "transcription": "лАте",
+    "russian": "латте",
+    "added": 3
+  },
+  {
+    "id": "w7ebf5b95",
+    "serbian": "Za mene kapućino, za njega late.",
+    "transcription": "за мЕне капучИно, за ньЕга лАте.",
+    "russian": "Мне капучино, ему латте.",
+    "added": 3
+  },
+  {
+    "id": "w04801b73",
+    "serbian": "pas",
+    "transcription": "пАс",
+    "russian": "собака",
+    "added": 3
+  },
+  {
+    "id": "w95fa439c",
+    "serbian": "Preko dana pas ne izlazi.",
+    "transcription": "прЕко дАна пАс нЕ излази.",
+    "russian": "Днём собака не выходит.",
+    "added": 3
+  },
+  {
+    "id": "w74eb5bdb",
+    "serbian": "vraćati se",
+    "transcription": "врАчати се",
+    "russian": "возвращаться",
+    "added": 3
+  },
+  {
+    "id": "w04143091",
+    "serbian": "vraćam se",
+    "transcription": "врАчам се",
+    "russian": "я возвращаюсь",
+    "added": 3
+  },
+  {
+    "id": "w83c43dbb",
+    "serbian": "Vraćam se kući kasno.",
+    "transcription": "врАчам се кУчи кАсно.",
+    "russian": "Я поздно возвращаюсь домой.",
+    "added": 3
+  },
+  {
+    "id": "we6a03280",
+    "serbian": "Kad se vratim.",
+    "transcription": "кАд се врАтим.",
+    "russian": "Когда я вернусь.",
+    "added": 3
+  },
+  {
+    "id": "w8765712f",
+    "serbian": "svratiti",
+    "transcription": "сврАтити",
+    "russian": "зайти",
+    "added": 3
+  },
+  {
+    "id": "w9377f9cc",
+    "serbian": "Svrati na kafu.",
+    "transcription": "сврАти на кАфу.",
+    "russian": "Зайди на кофе.",
+    "added": 3
+  },
+  {
+    "id": "wef7ef952",
+    "serbian": "svraćati",
+    "transcription": "сврАчати",
+    "russian": "заходить",
+    "added": 3
+  },
+  {
+    "id": "we174d299",
+    "serbian": "preuzeti",
+    "transcription": "преУзети",
+    "russian": "забрать",
+    "added": 3
+  },
+  {
+    "id": "w5700dea1",
+    "serbian": "preuzimati",
+    "transcription": "преУзимати",
+    "russian": "забирать",
+    "added": 3
+  },
+  {
+    "id": "wb28e6774",
+    "serbian": "paket",
+    "transcription": "пАкет",
+    "russian": "посылка",
+    "added": 3
+  },
+  {
+    "id": "wabfd2fb2",
+    "serbian": "namirnice",
+    "transcription": "нАмирнице",
+    "russian": "продукты",
+    "added": 3
+  },
+  {
+    "id": "w517b8432",
+    "serbian": "apoteka",
+    "transcription": "апотЕка",
+    "russian": "аптека",
+    "added": 3
+  },
+  {
+    "id": "wc3795fbf",
+    "serbian": "usput",
+    "transcription": "Успут",
+    "russian": "по пути",
+    "added": 3
+  },
+  {
+    "id": "wd06b30cd",
+    "serbian": "Usput kupuje namirnice, svraća u apoteku i preuzima paket.",
+    "transcription": "Успут кУпуе нАмирнице, сврАча у апотЕку и преУзима пАкет.",
+    "russian": "По пути она покупает продукты, заходит в аптеку и забирает посылку.",
+    "added": 3
+  },
+  {
+    "id": "w3c29ca58",
+    "serbian": "kolega",
+    "transcription": "колЕга",
+    "russian": "коллега",
+    "added": 3
+  },
+  {
+    "id": "w1b02fc9f",
+    "serbian": "šef",
+    "transcription": "шЕф",
+    "russian": "начальник",
+    "added": 3
+  },
+  {
+    "id": "wb6ced253",
+    "serbian": "Razgovara sa kolegama i dogovara se sa šefom o dnevnim obavezama.",
+    "transcription": "разговАра са колЕгама и договАра се са шЕфом о днЕвним Обавезама.",
+    "russian": "Разговаривает с коллегами и договаривается с начальником о ежедневных обязанностях.",
+    "added": 3
+  },
+  {
+    "id": "w8b77e59a",
+    "serbian": "pauza",
+    "transcription": "пАуза",
+    "russian": "перерыв",
+    "added": 3
+  },
+  {
+    "id": "w3383bab0",
+    "serbian": "obližnji",
+    "transcription": "Оближньи",
+    "russian": "ближайший",
+    "added": 3
+  },
+  {
+    "id": "wc4e1c4fe",
+    "serbian": "Na pauzi odlazi u obližnji kafić.",
+    "transcription": "на пАузи Одлази у Оближньи кАфич.",
+    "russian": "На перерыве уходит в ближайшее кафе.",
+    "added": 3
+  },
+  {
+    "id": "w430ae03c",
+    "serbian": "vesti",
+    "transcription": "вЕсти",
+    "russian": "новости",
+    "added": 3
+  },
+  {
+    "id": "w9d281166",
+    "serbian": "prijateljica",
+    "transcription": "приятЕльица",
+    "russian": "подруга",
+    "added": 3
+  },
+  {
+    "id": "w121e1562",
+    "serbian": "nastavljati",
+    "transcription": "нАставльати",
+    "russian": "продолжать",
+    "added": 3
+  },
+  {
+    "id": "wac438bd1",
+    "serbian": "zadatak",
+    "transcription": "задАтак",
+    "russian": "задача",
+    "added": 3
+  },
+  {
+    "id": "weca7ce29",
+    "serbian": "Posle pauze nastavlja da radi i završava svoje zadatke.",
+    "transcription": "после пАузе нАставльа да рАди и завршАва свОе задАтке.",
+    "russian": "После перерыва продолжает работать и заканчивает свои задачи.",
+    "added": 3
+  },
+  {
+    "id": "w247719fb",
+    "serbian": "radni dan",
+    "transcription": "рАдни дАн",
+    "russian": "рабочий день",
+    "added": 3
+  },
+  {
+    "id": "w2187d9c7",
+    "serbian": "raspoređivati",
+    "transcription": "распореджИвати",
+    "russian": "раскладывать / распределять",
+    "added": 3
+  },
+  {
+    "id": "w9436999f",
+    "serbian": "Kod kuće raspoređuje stvari.",
+    "transcription": "код кУче распорЕджуе ствАри.",
+    "russian": "Дома раскладывает вещи.",
+    "added": 3
   }
 ]
